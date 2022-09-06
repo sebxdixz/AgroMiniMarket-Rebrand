@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const NAVIGATIONBAR = () => {
+export const NavigationBar = () => {
   return (
     <div>
         
