@@ -1,14 +1,14 @@
 import './App.css';
-import { Button } from 'react-bootstrap';
-import {PrimerComponente} from './components/PrimerComponente';
+// import { Button } from 'react-bootstrap';
 import NavigationBar from './components/NavigationBar';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <PrimerComponente/>
-      </header>
+      </header> */}
       <body>
         <>
         <NavigationBar/>
