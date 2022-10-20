@@ -12,7 +12,9 @@ function App() {
       <body>
         <>
         <NavigationBar/>
+        
         </>
+
       </body>
     </div>
   );
