@@ -1,14 +1,13 @@
-import React from "react"
 import Carousel from 'react-bootstrap/Carousel';
 
-function UncontrolledExample() {
+function Carrusel() {
   return (
-    <Carousel>
+    <Carousel fade>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
+          src="./components/Carrusel/01.png"
+          alt="1"
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -18,8 +17,8 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
+          src="./src/components/Carrusel/02.png"
+          alt="2"
         />
 
         <Carousel.Caption>
@@ -30,8 +29,8 @@ function UncontrolledExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
+          src="./components/Carrusel/03.png"
+          alt="3"
         />
 
         <Carousel.Caption>
@@ -45,4 +44,4 @@ function UncontrolledExample() {
   );
 }
 
-export default UncontrolledExample;
+export default Carrusel;

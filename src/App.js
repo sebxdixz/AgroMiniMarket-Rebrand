@@ -1,10 +1,11 @@
 import './App.css';
 // import { Button } from 'react-bootstrap';
 import NavigationBar from './components/NavigationBar';
-import UncontrolledExample from './components/carrusel';
+import Carrusel from "./components/Carrusel/Carrusel";  
 
 function App() {
   return (
+    
     <div className="App">
       {/* <header className="App-header">
         <PrimerComponente/>
@@ -14,10 +15,8 @@ function App() {
         <NavigationBar/>
         <h2>   
 
-
-        
+<Carrusel/>
         </h2>
-        <UncontrolledExample/>
         </>
 
       </body>
