@@ -1,7 +1,7 @@
 import './App.css';
 // import { Button } from 'react-bootstrap';
 import NavigationBar from './components/NavigationBar';
-
+import UncontrolledExample from './components/carrusel';
 
 function App() {
   return (
@@ -12,7 +12,12 @@ function App() {
       <body>
         <>
         <NavigationBar/>
+        <h2>   
+
+
         
+        </h2>
+        <UncontrolledExample/>
         </>
 
       </body>
