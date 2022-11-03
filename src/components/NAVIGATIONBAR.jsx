@@ -11,7 +11,9 @@ function NavigationBar() {
           Agro<span>Minimarket</span> (Inicio Tambien)
         </h2>
         <div>
-          <a href="/">Inicio(Logo)</a>
+          <a href="/"><img
+          className="iconoNavbar"
+          src=".../public/LogoAM.jpg"/></a>
           <a href="/">Buscar</a>
           <a href="/">Conocenos</a>
         </div>

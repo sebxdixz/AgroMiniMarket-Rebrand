@@ -7,19 +7,22 @@ function App() {
   return (
     
     <div className="App">
-      {/* <header className="App-header">
-        <PrimerComponente/>
-      </header> */}
-      <body>
+
         <>
-        <NavigationBar/>
-        <h2>   
-
-<Carrusel/>
-        </h2>
+          <div>
+            <NavigationBar/>
+          </div>
+          <div/>
         </>
+        <>
+          <div>
+            <h2>   
 
-      </body>
+              <Carrusel/>
+            </h2>
+          </div>
+        </>
+      
     </div>
   );
 }
