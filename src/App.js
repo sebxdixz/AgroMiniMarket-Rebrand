@@ -12,12 +12,11 @@ function App() {
           <div>
             <NavigationBar/>
           </div>
-          <div/>
         </>
+
         <>
           <div>
-            <h2>   
-
+            <h2>
               <Carrusel/>
             </h2>
           </div>
