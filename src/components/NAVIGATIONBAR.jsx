@@ -13,7 +13,7 @@ function NavigationBar() {
         <div>
           <a href="/"><img
           className="iconoNavbar"
-          src=".../public/LogoAM.jpg" alt="15"/></a>
+          src=".../public/LogoAM.jpg" alt="Logo Inicio"/></a>
           <a href="/">Buscar</a>
           <a href="/">Conocenos</a>
         </div>
