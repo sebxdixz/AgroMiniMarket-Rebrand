@@ -8,19 +8,19 @@ function App() {
     
     <div className="App">
 
-        <>
+        
           <div>
             <NavigationBar/>
           </div>
-        </>
         
-        <>
+        
+        
           <div>
             <h2>
               <Carrusel/>
             </h2>
           </div>
-        </>
+        
       
     </div>
   );
