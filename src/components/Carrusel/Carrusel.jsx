@@ -1,29 +1,33 @@
 import Carousel from 'react-bootstrap/Carousel';
+import './Carrusel.css';
 import SlideProducto1 from "./01.png"
 import SlideProducto2 from "./02.png"
 import SlideProducto3 from "./03.png"
-
 
 function Carrusel() {
   return (
     <Carousel fade>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={SlideProducto1}
-          alt="Imagen de producto de AgroMinimarket 1"
-        />
+        <div className="slidesProductos">
+          <img
+            className="d-block w-100"
+            src={SlideProducto1}
+            alt="Imagen de producto de AgroMinimarket 1"
+          />
+        </div>
         <Carousel.Caption>
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={SlideProducto2}
-          alt="Imagen de producto de AgroMinimarket 2"
-        />
+        <div className="slidesProductos">
+          <img
+            className="d-block w-100"
+            src={SlideProducto2}
+            alt="Imagen de producto de AgroMinimarket 2"
+          />
+        </div>
 
         <Carousel.Caption>
           <h3>Second slide label</h3>
@@ -31,11 +35,13 @@ function Carrusel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={SlideProducto3}
-          alt="Imagen de producto de AgroMinimarket 3"
-        />
+        <div className="slidesProductos">
+          <img
+            className="d-block w-100"
+            src={SlideProducto3}
+            alt="Imagen de producto de AgroMinimarket 3"
+          />
+        </div>
 
         <Carousel.Caption>
           <h3>Third slide label</h3>

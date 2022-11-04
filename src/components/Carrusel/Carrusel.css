@@ -1,0 +1,11 @@
+div.slidesProductos{
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(0, 0 , 0, 0.19);
+    margin-bottom: 35px;
+    display: flex;
+}
+Carousel.Caption{
+    color: blue;
+}
