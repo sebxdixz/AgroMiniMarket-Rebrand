@@ -1,7 +1,7 @@
 import './App.css';
 // import { Button } from 'react-bootstrap';
 import NavigationBar from './components/NavigationBar';
-import Carrusel from "./components/Carrusel/Carrusel";  
+import Carrusel from "./components/carrusel/Carrusel";  
 
 function App() {
   return (
