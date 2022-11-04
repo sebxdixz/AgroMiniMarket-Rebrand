@@ -16,8 +16,8 @@ function Carrusel() {
           />
         </div>
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>1</h3>
+          <p>Jardin de las delicias</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -30,8 +30,8 @@ function Carrusel() {
         </div>
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>2</h3>
+          <p>Foto japonesa</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -44,9 +44,9 @@ function Carrusel() {
         </div>
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>3</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            y otra. 
           </p>
         </Carousel.Caption>
       </Carousel.Item>
