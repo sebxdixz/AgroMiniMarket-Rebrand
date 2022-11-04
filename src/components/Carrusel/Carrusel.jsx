@@ -1,4 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
+import SlideProducto1 from "./01.png"
+import SlideProducto2 from "./02.png"
+import SlideProducto3 from "./03.png"
+
 
 function Carrusel() {
   return (
@@ -6,8 +10,8 @@ function Carrusel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="./components/Carrusel/01.png"
-          alt="1"
+          src={SlideProducto1}
+          alt="Imagen de producto de AgroMinimarket 1"
         />
         <Carousel.Caption>
           <h3>First slide label</h3>
@@ -17,8 +21,8 @@ function Carrusel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="./src/components/Carrusel/02.png"
-          alt="2"
+          src={SlideProducto2}
+          alt="Imagen de producto de AgroMinimarket 2"
         />
 
         <Carousel.Caption>
@@ -29,8 +33,8 @@ function Carrusel() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="./components/Carrusel/03.png"
-          alt="3"
+          src={SlideProducto3}
+          alt="Imagen de producto de AgroMinimarket 3"
         />
 
         <Carousel.Caption>

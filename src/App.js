@@ -13,7 +13,7 @@ function App() {
             <NavigationBar/>
           </div>
         </>
-
+        
         <>
           <div>
             <h2>
