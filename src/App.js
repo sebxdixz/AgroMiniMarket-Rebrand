@@ -1,6 +1,6 @@
 import './App.css';
 // import { Button } from 'react-bootstrap';
-import NavigationBar from './components/NavigationBar';
+import NavigationBar from './components/navigationBar/NavigationBar';
 import "./css/colors.module.css";
 import Carrusel from "./components/carrusel/Carrusel";  
 

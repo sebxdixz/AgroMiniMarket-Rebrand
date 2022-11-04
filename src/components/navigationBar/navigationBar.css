@@ -1,0 +1,22 @@
+div.inicio{
+    width: 350px;
+    height: 100px;
+    overflow: hidden;
+    margin: -30px;
+    position: relative;
+    
+}
+
+img.iconoNavbar{
+    /* height: 340px; */
+    position:absolute;
+    left: -10%;
+    right: -30%;
+    top: -25%;
+    bottom: -80%;
+    margin: auto;
+    min-height: 20%;
+    min-width: 10%;
+    max-width: 100%;
+    
+}

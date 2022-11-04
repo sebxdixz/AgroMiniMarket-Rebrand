@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import './Carrusel.css';
+import './carrusel.css';
 import SlideProducto1 from "./01.png"
 import SlideProducto2 from "./02.png"
 import SlideProducto3 from "./03.png"

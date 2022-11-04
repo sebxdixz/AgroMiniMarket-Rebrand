@@ -1,23 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 import BurgerButton from "./BurgerButton";
-import logo3 from "../logos/Logo3AM.png"
-const Logos =require.context('../logos/');
+import logo3 from "../../logos/Logo3AM.png";
+import './navigationBar.css'
+const Logos =require.context('../../logos/');
 
 function NavigationBar() {
   return (
   <>
       <NavContainer>
         <h2>
-          <a href="/"><img
-            className="iconoNavbar"
-            src={logo3} alt="Logo Inicio" /></a>
+          <a href="/">
+            <div className="inicio">
+              <img className="iconoNavbar" src={logo3} alt="Logo de inicio de AgroMinimarket" />
+            </div>
+          </a>
           {/* Agro<span>Minimarket</span> (Inicio Tambien) */}
         </h2>
         <div>
-          <a href="/"><img src={logo3} alt="Logo de inicio de AgroMinimarket" /></a>
-          <a href="/">Buscar</a>
-          <a href="/">Conocenos</a>
+          
+          <a href="/">Buscar(Buscador)</a>
+          <a href="/">Productos(Dropdown)</a>
+          <a href="/">Conocenos(Redireccion)</a>
         </div>
         <div className="burguer"><BurgerButton /></div>
       </NavContainer>
