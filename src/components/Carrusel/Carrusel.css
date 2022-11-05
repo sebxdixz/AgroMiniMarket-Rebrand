@@ -1,8 +1,12 @@
 div.slidesProductos{
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    position: relative;
     max-width: 100%;
     height: auto;
     background-color: white;
-    box-shadow: 0 14px 28px rgba(0, 0 , 0, 0.19);
+    box-shadow: 0 14px 28px rgba(0, 0 , 0, 0.2);
     margin-bottom: 35px;
     display: flex;
 }

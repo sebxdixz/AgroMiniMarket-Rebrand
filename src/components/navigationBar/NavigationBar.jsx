@@ -50,6 +50,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 min-width: 100%;
+
 a{
   color: black;
   text-decoration: none;
@@ -58,7 +59,7 @@ a{
 .links{
   position: absolute;
   top: -700px;
-  left: -2000px;
+  left: 2000px;
   right: 0;
   margin-left: auto;
   margin-right: auto;
@@ -74,7 +75,7 @@ a{
     margin: 0;
     a{
       font-size: 1rem;
-      color: white;
+      color: black;
       display: inline;
     }
     display: block;
