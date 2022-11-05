@@ -10,3 +10,6 @@ div.rcv-original-price-custom{}
 div.rcv-discount-price-custom{}
 div.rcv-btn-one-custom{}
 div.rcv-btn-two-custom{} */
+rcv-object-md-custom {
+@media(width: 33%;)}
+

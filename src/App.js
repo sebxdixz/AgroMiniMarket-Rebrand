@@ -3,6 +3,7 @@ import './App.css';
 import NavigationBar from './components/navigationBar/NavigationBar';
 import "./css/colors.module.css";
 import Carrusel from "./components/carrusel/Carrusel";  
+import ProductData from './components/catalog/Catalog';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <div>
             <h2>
               <Carrusel/>
+              <ProductData />
             </h2>
           </div>
         

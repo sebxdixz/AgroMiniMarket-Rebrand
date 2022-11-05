@@ -2,8 +2,8 @@ import React from 'react';
 import "./Catalog.css";
 import Catalog from "react-catalog-view";
 
+//We create the data.json in a const data
 
-//We conver the data.json in a const data
 
 
 function ProductData(props){
@@ -55,10 +55,10 @@ function ProductData(props){
            contentKeys={CONTENT_KEYS}  
            // JSON Object defining the keys that will be 
            // used from the data array, keys should match. (required)
-           skeleton={4}
+           skeleton={6}
            // Any non zero number will override default cards
            // and will show that many skeleton cards.           
-           cardSize="sm"
+           cardSize="md"
            // Card sizes, sm, md and lg for small, medium  and large
            btnOneText="View"
            // Enter text for action button one 
@@ -96,4 +96,4 @@ function ProductData(props){
            />
             )
   }
-  export default Catalog;
+  export default ProductData;
