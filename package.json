@@ -16,10 +16,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+        "start": "react-app-rewired start",
+        "build": "react-app-rewired build",
+        "test": "react-app-rewired test",
+        "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +43,12 @@
     "@babel/plugin-syntax-import-assertions": "^7.20.0",
     "customize-cra": "^1.0.0",
     "react-app-rewired": "^2.2.1"
-  }
+  },
+  "plugins":{
+  "plugins": [
+    "@babel/plugin-syntax-import-assertions"
+  ]
+}
+  
 }
 
