@@ -1,5 +1,4 @@
 import './App.css';
-// import { Button } from 'react-bootstrap';
 import NavigationBar from './components/navigationBar/NavigationBar';
 import "./css/colors.module.css";
 import Carrusel from "./components/carrusel/Carrusel";  
@@ -20,8 +19,11 @@ function App() {
           <div>
             <h2>
               <Carrusel/>
-              <ProductData />
             </h2>
+            <p3> 
+              <ProductData/>
+            </p3>
+            
           </div>
         
       

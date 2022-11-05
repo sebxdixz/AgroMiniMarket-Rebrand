@@ -1,15 +1,36 @@
-/* div.rcv-container-custom{}
-div.rcv-object-sm-custom{}
-div.rcv-catalog-card-custom	For customizing card{}
-div.rcv-product-image-container-custom{}
-div.rcv-product-image-container-custom{}
+div.rcv-container-custom{
+    border-radius: 50%;
+    min-width: 300px;
+
+}
+div.rcv-object-sm-custom{
+
+}
+div.rcv-catalog-card-custom	For customizing card{
+
+}
+div.rcv-product-image-container-custom{
+    border-radius: 5cm;
+    background-color: blue;
+}
+div.rcv-product-image-container-custom{
+    position:relative;
+    margin: auto;
+    min-height: 20%;
+    min-width: 10%;
+    max-width: 90%;
+    border-radius: 25%;
+
+}
 div.rcv-product-text-custom	{}
-div.rcv-product-name-custom	{}
+div.rcv-product-name-custom	{
+    font-family: 'Courier New', Courier, monospace;
+}
 div.rcv-product-description-custom{}
 div.rcv-original-price-custom{}
 div.rcv-discount-price-custom{}
 div.rcv-btn-one-custom{}
-div.rcv-btn-two-custom{} */
-rcv-object-md-custom {
-@media(width: 33%;)}
+div.rcv-btn-two-custom{}
+
+
 

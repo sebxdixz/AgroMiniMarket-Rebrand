@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+@font-face {
+  font-family: "Inter";   /*Can be any text*/
+  src: local("InterVariableFont"),
+    url("./font/InterVariableFont.ttf") format("truetype");
+}

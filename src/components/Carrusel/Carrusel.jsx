@@ -16,8 +16,8 @@ function Carrusel() {
           />
         </div>
         <Carousel.Caption>
-          <h3>1</h3>
-          <p>Jardin de las delicias</p>
+          <h3 style={{ color: "grey" }}>1</h3>
+          <p style={{ color: "grey" }}>Jardin de las delicias</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -30,8 +30,8 @@ function Carrusel() {
         </div>
 
         <Carousel.Caption>
-          <h3>2</h3>
-          <p>Foto japonesa</p>
+          <h3 style={{ color: "grey" }}>2</h3>
+          <p style={{ color: "grey" }}>Foto japonesa</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -44,8 +44,8 @@ function Carrusel() {
         </div>
 
         <Carousel.Caption>
-          <h3>3</h3>
-          <p>
+          <h3 style={{ color: "grey" }}>3</h3>
+          <p style={{ color: "grey" }}>
             y otra. 
           </p>
         </Carousel.Caption>
