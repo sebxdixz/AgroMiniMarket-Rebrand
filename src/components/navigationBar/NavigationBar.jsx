@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import BurgerButton from "./BurgerButton";
 import logo3 from "../../logos/Logo3AM.png";
 import './navigationBar.css'
+
 // const Logos =require.context('../../logos/');
 
 function NavigationBar() {
-  return (
-  <>
+  
+  const [clicked, setClicked] = useState(false);
+  const handleClick = () => {
+    //cuando esta true lo pasa a false y vice versa
+    setClicked(!clicked);
+  }
+    return (
+      <>
       <NavContainer>
         <h2>
           <a href="/">
@@ -17,36 +24,34 @@ function NavigationBar() {
           </a>
           {/* Agro<span>Minimarket</span> (Inicio Tambien) */}
         </h2>
-        <div>
+        <div className={`links ${clicked ? 'active' : ''}`}>
           
-          <a href="/">Buscar(Buscador)</a>
-          <a href="/">Productos(Dropdown)</a>
-          <a href="/">Conocenos(Redireccion)</a>
+          <a onClick={handleClick} href="#h">Buscar(Buscador)</a>
+          <a onClick={handleClick} href="#h">Productos(Dropdown)</a>
+          <a onClick={handleClick} href="#h">Conocenos(Redireccion)</a>
         </div>
-        <div className="burguer"><BurgerButton /></div>
+        <div className='burguer'>
+          <BurgerButton clicked={clicked} handleClick={handleClick} />
+        </div>
+        <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
       </NavContainer>
   </>
     
-  );
-}
-
-export default NavigationBar;
-
-const NavContainer = styled.nav`
-h2{
-  color: white;
-  font-weight: 400;
-  span{
-    font-weight: bold;
+    );
   }
-}
+  
+  export default NavigationBar;
+  
+  const NavContainer = styled.nav`
+
 padding: .4rem;
-background-color: #333;
+background-color: #B5B2B2;
 display: flex;
 align-items: center;
 justify-content: space-between;
+min-width: 100%;
 a{
-  color: white;
+  color: black;
   text-decoration: none;
   margin-right: 1rem;
 }
@@ -58,9 +63,9 @@ a{
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  transition: all .5s ease;
+  transition: all .3s ease;
   a{
-    color: white;
+    color: black;
     font-size: 2rem;
     display: block;
   }
@@ -76,7 +81,6 @@ a{
   }
 }
 .links.active{
-  width: 100%;
   display: block;
   position: absolute;
   margin-left: auto;
@@ -88,7 +92,7 @@ a{
   a{
     font-size: 2rem;
     margin-top: 1rem;
-    color: white;
+    color: black;
   }
 }
 .burguer{
@@ -105,11 +109,12 @@ top: -1000px;
 left: -1000px;
 width: 100%;
 height: 100%;
+margin:auto;
 z-index: -1;
 transition: all .6s ease ;
 
 &.active{
-  border-radius: 0 0 80% 0;
+  border-radius: 0 0 20% 20%;
   top: 0;
   left: 0;
   width: 100%;

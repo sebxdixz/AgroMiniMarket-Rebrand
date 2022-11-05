@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-function BurgerButton() {
+function BurgerButton(props) {
     const icons = document.querySelectorAll('.icon');
     icons.forEach (icon => {  
       icon.addEventListener('click', (event) => {
@@ -13,7 +13,7 @@ function BurgerButton() {
     
   return (
     <BurgerContainer>
-        <div className="icon nav-icon-6">
+        <div  onClick={props.handleClick} className={`icon nav-icon-6 ${props.clicked ? 'open' : ''}`}>
             <span></span>
             <span></span>
             <span></span>
@@ -35,7 +35,7 @@ const BurgerContainer = styled.div`
   display: inline-block;
 }
 .nav-icon-6 span{
-  background-color:#fff;
+  background-color:#000;
   position: absolute;
   border-radius: 2px;
   transition: .3s cubic-bezier(.8, .5, .2, 1.4);

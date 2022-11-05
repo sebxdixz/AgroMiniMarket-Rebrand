@@ -16,7 +16,7 @@ function App() {
         
         
         
-          <div>
+          <div className='CarruselApp'>
             <h2>
               <Carrusel/>
             </h2>
