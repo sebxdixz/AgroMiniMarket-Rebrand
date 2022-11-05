@@ -3,7 +3,7 @@ import styled from "styled-components";
 import BurgerButton from "./BurgerButton";
 import logo3 from "../../logos/Logo3AM.png";
 import './navigationBar.css'
-const Logos =require.context('../../logos/');
+// const Logos =require.context('../../logos/');
 
 function NavigationBar() {
   return (
