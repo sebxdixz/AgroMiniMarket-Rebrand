@@ -1,16 +1,16 @@
-div.rcv-container-custom{
+@media(max-width: 575px) { 
+div.rcv-object-md-custom
+{
     border-radius: 50%;
-    min-width: 300px;
-
 }
-div.rcv-object-sm-custom{
-
 }
-div.rcv-catalog-card-custom	For customizing card{
-
+div.rcv-container-custom{
+    min-width: 33%;
+    margin: auto;
 }
+/* div.rcv-catalog-card-custom	For customizing card{} */
 div.rcv-product-image-container-custom{
-    border-radius: 5cm;
+    border-radius: 5%;
     background-color: blue;
 }
 div.rcv-product-image-container-custom{
@@ -31,7 +31,9 @@ div.rcv-product-description-custom{}
 div.rcv-original-price-custom{}
 div.rcv-discount-price-custom{}
 div.rcv-btn-one-custom{}
-div.rcv-btn-two-custom{}
+div.rcv-btn-two-custom{
+    color: antiquewhite ;
+}
 
 
 

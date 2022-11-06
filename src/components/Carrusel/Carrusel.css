@@ -19,3 +19,6 @@ div.h3{
     color: black ;
     font-family: fantasy;
 }
+img {
+    border-radius: 2%;
+  }

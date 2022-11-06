@@ -27,7 +27,7 @@ function ProductData(props){
            skeleton={0}
            // Any non zero number will override default cards
            // and will show that many skeleton cards.           
-           cardSize="lg"
+           cardSize="md"
            // Card sizes, sm, md and lg for small, medium  and large  
            btnTwoText="Agregar al Carro"
            // Enter text for action button two 

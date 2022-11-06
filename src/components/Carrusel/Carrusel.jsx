@@ -1,8 +1,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import './carrusel.css';
-import SlideProducto1 from "./01.png"
-import SlideProducto2 from "./02.png"
-import SlideProducto3 from "./03.png"
+import SlideProducto1 from "./01.jpg"
+import SlideProducto2 from "./02.jpg"
+import SlideProducto3 from "./03.jpg"
 
 function Carrusel() {
   return (
@@ -16,8 +16,8 @@ function Carrusel() {
           />
         </div>
         <Carousel.Caption>
-          <h3 style={{ color: "grey" }}>1</h3>
-          <p style={{ color: "grey" }}>Jardin de las delicias</p>
+          <h3 style={{ color: "grey" }}></h3>
+          <p style={{ color: "grey" }}></p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -30,8 +30,8 @@ function Carrusel() {
         </div>
 
         <Carousel.Caption>
-          <h3 style={{ color: "grey" }}>2</h3>
-          <p style={{ color: "grey" }}>Foto japonesa</p>
+          <h3 style={{ color: "grey" }}></h3>
+          <p style={{ color: "grey" }}></p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -44,10 +44,8 @@ function Carrusel() {
         </div>
 
         <Carousel.Caption>
-          <h3 style={{ color: "grey" }}>3</h3>
-          <p style={{ color: "grey" }}>
-            y otra. 
-          </p>
+          <h3 style={{ color: "grey" }}></h3>
+          <p style={{ color: "grey" }}></p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
