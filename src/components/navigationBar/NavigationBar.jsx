@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import BurgerButton from "./BurgerButton";
 import logo3 from "../../logos/Logo3AM.png";
+
+
+import DropdownProductos from './DropdownProductos';
 import './navigationBar.css'
 
 // const Logos =require.context('../../logos/');
@@ -26,9 +29,12 @@ function NavigationBar() {
         </h2>
         <div className={`links ${clicked ? 'active' : ''}`}>
           
-          <a onClick={handleClick} href="#h">Buscar(Buscador)</a>
-          <a onClick={handleClick} href="#h">Productos(Dropdown)</a>
-          <a onClick={handleClick} href="#h">Conocenos(Redireccion)</a>
+          {/* <a onClick={handleClick} href="#h">Buscar(Buscador)</a>
+          <a onClick={handleClick} href="#h"><DropdownProductos/></a>
+          <a onClick={handleClick} href="#h">Conocenos(Redireccion)</a> */}
+          <a href="#h">Buscar(Buscador)</a>
+          <a href="#h"><DropdownProductos/></a>
+          <a href="#h">Conocenos(Redireccion)</a>
         </div>
         <div className='burguer'>
           <BurgerButton clicked={clicked} handleClick={handleClick} />
@@ -65,6 +71,7 @@ a{
   margin-right: auto;
   text-align: center;
   transition: all .3s ease;
+
   a{
     color: black;
     font-size: 2rem;
@@ -115,9 +122,10 @@ z-index: -1;
 transition: all .6s ease ;
 
 &.active{
-  border-radius: 0 0 20% 20%;
+  border-radius: 0 0 25% 25%;
   top: 0;
-  left: 0;
+  left: 50%;
+  bottom: 20%;
   width: 100%;
   height: 100%;
 }

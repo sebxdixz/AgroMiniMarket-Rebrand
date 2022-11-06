@@ -8,6 +8,9 @@ div.inicio{
     max-height: 10%;
     
 }
+a{
+    display: inline;
+}
 
 img.iconoNavbar{
     position:absolute;
