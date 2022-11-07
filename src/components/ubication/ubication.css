@@ -4,7 +4,6 @@ div.FatherUbication{
     position: relative;
     width: 95%;
     height: 150%;
-    border-radius: 8% 8% 4% 4%;
     align-items: center;
     left: 2.5%;
     box-shadow: 5px;
@@ -16,7 +15,6 @@ h2.tituloUbication{
     font-size: x-large;
     font-family: 'Courier New', Courier, monospace;
     color: #00458a;
-    border-radius: 16% 16% 0 0;
     max-width: 100%;
     
 }
@@ -24,7 +22,4 @@ span{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     color: rgb(36, 36, 36);
-}
-iframe{
-    border-radius: 4%;
 }
