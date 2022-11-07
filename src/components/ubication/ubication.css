@@ -1,0 +1,47 @@
+.tv {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin: 20px 0;
+    background: red;
+    border-radius: 50% / 10%;
+    color: white;
+    text-align: center;
+    text-indent: .1em;
+  }
+  .tv:before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: -5%;
+    left: -5%;
+    background: inherit;
+    border-radius: 5% / 50%;
+  }
+
+div.FatherUbication{
+    background-color : #79bcff;
+    position: relative;
+    width: 95%;
+    height: 150%;
+    border-radius: 8% 8% 4% 4%;
+    align-items: center;
+    left: 2.5%;
+}
+h2.tituloUbication{
+    background-color: cadetblue;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(63, 35, 35);
+    border-radius: 10% 10% 0 0;
+    max-width: 100%;
+}
+span{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: black;
+}
+iframe{
+    border-radius: 4%;
+}

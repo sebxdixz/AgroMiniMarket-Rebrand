@@ -43,3 +43,12 @@
   src: local("InterVariableFont"),
     url("./font/InterVariableFont.ttf") format("truetype");
 }
+h2.catalogoTitle{
+  position: relative;
+  top: 20px;
+  font-family: "Inter";
+  background-color: rgb(169, 231, 169);
+  border-radius: 100% 100% 0 0;
+  width: 90%;
+  display: inline-block;
+}

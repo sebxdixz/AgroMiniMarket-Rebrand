@@ -58,7 +58,7 @@ function NavigationBar() {
   const NavContainer = styled.nav`
 
   padding: .4rem;
-  background-color: #B5B2B2;
+  background-color: #0E84CF;
   display: flex;
   align-items: center;
   justify-content: space-between;

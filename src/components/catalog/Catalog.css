@@ -6,8 +6,13 @@ div.rcv-object-md-custom
 
 }
 div.rcv-container-custom{
+    top: 9%;
     min-width: 33%;
     margin: auto;
+    background-color: rgb(181, 253, 253);
+    border-radius: 6%;
+    width: 98%;
+    
 
 }
 /* div.rcv-catalog-card-custom	For customizing card{} */
@@ -21,14 +26,17 @@ div.rcv-product-image-container-custom{
     min-width: 10%;
     max-width: 90%;
     border-radius: 25%;
+    background-color: rgb(181, 253, 253);
 
     
 }
 div.rcv-product-text-custom	{
     border-radius: 8%;
+    
 }
 div.rcv-product-name-custom	{
     font-family: 'Courier New', Courier, monospace;
+    
 }
 div.rcv-product-description-custom{}
 div.rcv-original-price-custom{}
