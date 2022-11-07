@@ -22,7 +22,10 @@ function NavigationBar() {
         <h2>
           <a href="/">
             <div className="inicio">
-              <img className="iconoNavbar" src={logo3} alt="Logo de inicio de AgroMinimarket" />
+              
+              <img to="/" className="iconoNavbar" src={logo3} alt="Logo de inicio de AgroMinimarket" />
+              
+            
             </div>
           </a>
           {/* Agro<span>Minimarket</span> (Inicio Tambien) */}
@@ -39,7 +42,9 @@ function NavigationBar() {
             <a className="navProd" href="#h"><DropdownProductos/></a>
           </span>
           <span className="navDer2">
+            
             <a className="navConocenos" href="#h">Conócenos</a>
+          
           </span>
         </div>
         <div className='burguer'>

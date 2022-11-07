@@ -9,9 +9,9 @@ div.rcv-container-custom{
     top: 9%;
     min-width: 33%;
     margin: auto;
-    background-color: rgb(181, 253, 253);
-    border-radius: 6%;
-    width: 98%;
+    background-color: rgb(188, 192, 255);
+    border-radius: 0 0 2% 2%;
+    width: 95%;
     
 
 }
