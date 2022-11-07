@@ -3,15 +3,16 @@ div.rcv-object-md-custom
 {
     border-radius: 50%;
 }
+
 }
 div.rcv-container-custom{
     min-width: 33%;
     margin: auto;
+
 }
 /* div.rcv-catalog-card-custom	For customizing card{} */
 div.rcv-product-image-container-custom{
     border-radius: 5%;
-    background-color: blue;
 }
 div.rcv-product-image-container-custom{
     position:relative;
@@ -20,10 +21,12 @@ div.rcv-product-image-container-custom{
     min-width: 10%;
     max-width: 90%;
     border-radius: 25%;
-    
 
+    
 }
-div.rcv-product-text-custom	{}
+div.rcv-product-text-custom	{
+    border-radius: 8%;
+}
 div.rcv-product-name-custom	{
     font-family: 'Courier New', Courier, monospace;
 }

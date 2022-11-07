@@ -8,8 +8,8 @@ div.inicio{
     max-height: 10%;
     
 }
-a{
-    display: inline;
+span.product{
+    
 }
 
 img.iconoNavbar{
@@ -23,4 +23,24 @@ img.iconoNavbar{
     min-width: 10%;
     max-width: 90%;
     
+}
+
+div.dropd{
+    margin-bottom: -10%;
+}
+
+.links{
+    display: inline;
+}
+
+div.active{
+    min-height: 185px;
+    
+}
+span.navDer2{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.3cm;
+    
+
 }

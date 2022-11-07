@@ -20,11 +20,10 @@ const DropdownProductos = () => {
         <Dropdown isOpen={dropdown} toggle={abrirCerrarDropdown}>
             <DropdownToggle caret>Productos</DropdownToggle>
             <DropdownMenu className="divProductosDropdown">
-                <script>
-                    {/* Código Javascript */}
+                
+                {/* <ProductData className="catalogoDropdown"/> */}
 
-                </script>
-                <ProductData className="catalogoDropdown"/>
+                <ProductData/>
             </DropdownMenu>
         </Dropdown>
     </div>

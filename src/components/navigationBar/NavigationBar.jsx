@@ -27,20 +27,27 @@ function NavigationBar() {
           </a>
           {/* Agro<span>Minimarket</span> (Inicio Tambien) */}
         </h2>
-        <div className={`links ${clicked ? 'active' : ''}`}>
+        <div className={`links ${clicked ? 'active' : ''}`}>  
           
           {/* <a onClick={handleClick} href="#h">Buscar(Buscador)</a>
           <a onClick={handleClick} href="#h"><DropdownProductos/></a>
           <a onClick={handleClick} href="#h">Conocenos(Redireccion)</a> */}
-          <a href="#h">Buscar(Buscador)</a>
-          <a href="#h"><DropdownProductos/></a>
-          <a href="#h">Conocenos(Redireccion)</a>
+          <span className="navDer2">
+            <a className="navBusc" href="#h">Buscar</a>
+          </span>
+          <span className="navDer2" title="product">
+            <a className="navProd" href="#h"><DropdownProductos/></a>
+          </span>
+          <span className="navDer2">
+            <a className="navConocenos" href="#h">Conócenos</a>
+          </span>
         </div>
         <div className='burguer'>
           <BurgerButton clicked={clicked} handleClick={handleClick} />
         </div>
-        <BgDiv className={`initial ${clicked ? ' active' : ''}`}></BgDiv>
+        <BgDiv className={`initial ${clicked ? 'active' : ''}`}></BgDiv>
       </NavContainer>
+      <div className={`${clicked ? 'active' : ''}`}/>
   </>
     
     );
@@ -50,32 +57,39 @@ function NavigationBar() {
   
   const NavContainer = styled.nav`
 
-padding: .4rem;
-background-color: #B5B2B2;
-display: flex;
-align-items: center;
-justify-content: space-between;
-min-width: 100%;
+  padding: .4rem;
+  background-color: #B5B2B2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 100%;
+  border-radius: 3%;
 
 a{
   color: black;
   text-decoration: none;
   margin-right: 1rem;
+  display:inline;
+  font-family: 'Courier New', Courier, monospace;
+  
 }
 .links{
   position: absolute;
   top: -700px;
-  left: 2000px;
+  left: -1000px;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  transition: all .3s ease;
+  transition: all .4s ease;
+  display:inline;
+  
+
 
   a{
     color: black;
     font-size: 2rem;
-    display: block;
+    display: inline;
   }
   @media(min-width: 768px){
     position: initial;
@@ -85,7 +99,7 @@ a{
       color: black;
       display: inline;
     }
-    display: block;
+    display: inline;
   }
 }
 .links.active{
@@ -93,14 +107,18 @@ a{
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 30%;
-  left: 0;
+  top: 17%;
+  left: 73%;
   right: 0;
-  text-align: center;
+  text-align: left;
+  justify-content: space-between;
+  .navDer2{
+    padding:0.1%;
+  }
   a{
-    font-size: 2rem;
+    font-size: 1rem;
     margin-top: 1rem;
-    color: black;
+    color: white;
   }
 }
 .burguer{
@@ -119,13 +137,13 @@ width: 100%;
 height: 100%;
 margin:auto;
 z-index: -1;
-transition: all .6s ease ;
+transition: all .4s ease ;
 
 &.active{
   border-radius: 0 0 25% 25%;
   top: 0;
-  left: 50%;
-  bottom: 20%;
+  left: 65%;
+  bottom: 400%;
   width: 100%;
   height: 100%;
 }
