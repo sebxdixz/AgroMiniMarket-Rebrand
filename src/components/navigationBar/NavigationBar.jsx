@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import BurgerButton from "./BurgerButton";
 import logo3 from "../../logos/Logo3AM.png";
-
+import { Link } from "react-router-dom";
 
 import DropdownProductos from './DropdownProductos';
 import './navigationBar.css'
@@ -22,10 +22,7 @@ function NavigationBar() {
         <h2>
           <a href="/">
             <div className="inicio">
-              
               <img to="/" className="iconoNavbar" src={logo3} alt="Logo de inicio de AgroMinimarket" />
-              
-            
             </div>
           </a>
           {/* Agro<span>Minimarket</span> (Inicio Tambien) */}
@@ -43,7 +40,7 @@ function NavigationBar() {
           </span>
           <span className="navDer2">
             
-            <a className="navConocenos" href="#h">Conócenos</a>
+            <Link to="/Conocenos" className="navConocenos" href="/Conocenos">Conócenos</Link>
           
           </span>
         </div>
