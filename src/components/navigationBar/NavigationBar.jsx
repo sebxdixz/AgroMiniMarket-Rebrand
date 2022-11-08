@@ -4,7 +4,7 @@ import BurgerButton from "./BurgerButton";
 import logo3 from "../../logos/Logo3AM.png";
 import { Link } from "react-router-dom";
 
-import DropdownProductos from './DropdownProductos';
+// import DropdownProductos from './DropdownProductos';
 import './navigationBar.css'
 
 // const Logos =require.context('../../logos/');
@@ -36,7 +36,7 @@ function NavigationBar() {
             <a className="navBusc" href="#h">Buscar</a>
           </span>
           <span className="navDer2" title="product">
-            <a className="navProd" href="#h"><DropdownProductos/></a>
+            <a className="navProd" href="/Productos">Productos</a> {/*<DropdownProductos/>*/}
           </span>
           <span className="navDer2">
             
