@@ -5,8 +5,8 @@ import './myLocalStorage.css'
 export const MyDinamicStorage = () => {
     const [inputText, setInputText] = useState('');
     const [savedData, setSavedData] = useState(false);
-    
-    if (localStorage.getItem('nombre')==="Null") {
+
+    if (localStorage.getItem('nombre')===null) {
    
         const handleInputChange = (e) => {
             const text = e.target.value
