@@ -2,7 +2,7 @@ import './App.css';
 import "./css/colors.module.css";
 import { Routes, Route } from "react-router-dom";
 import About from "./paginas/About";
-import Inicio from './paginas/inicio';
+import Inicio from './paginas/Inicio';
 import Producto from "./paginas/Producto";
 
 import React from 'react';

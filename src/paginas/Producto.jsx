@@ -1,12 +1,13 @@
 import React from "react";
 import NavigationBar from "../components/navigationBar/NavigationBar";
 import ProductData from "../components/catalog/Catalog";
+import "./producto.css";
 
 const Producto = () => {
     return (
         <div>
             <NavigationBar />
-            <h1>Productos</h1>
+            <box>Productos Disponibles</box>
             <ProductData/>
         </div>
     );
