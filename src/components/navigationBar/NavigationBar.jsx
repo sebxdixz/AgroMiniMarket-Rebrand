@@ -3,8 +3,6 @@ import styled from "styled-components";
 import BurgerButton from "./BurgerButton";
 import logo3 from "../../logos/Logo3AM.png";
 import { Link } from "react-router-dom";
-
-// import DropdownProductos from './DropdownProductos';
 import './navigationBar.css'
 
 // const Logos =require.context('../../logos/');
@@ -18,7 +16,7 @@ function NavigationBar() {
   }
     return (
       <>
-      <NavContainer>
+            <NavContainer style={{ backgroundColor: '#ff6434', borderRadius:0 }}>
         <h2>
           <a href="/">
             <div className="inicio">

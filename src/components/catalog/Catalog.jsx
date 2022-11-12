@@ -2,6 +2,7 @@ import React from 'react';
 import "./Catalog.css";
 import Catalog from "react-catalog-view";
 import products from './json_in_jsx';
+import "../../css/colors.module.css"; 
 
 function ProductData(props){
     

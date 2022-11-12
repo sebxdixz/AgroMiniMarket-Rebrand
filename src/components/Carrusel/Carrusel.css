@@ -5,7 +5,7 @@ div.slidesProductos{
     position: relative;
     max-width: 100%;
     height: auto;
-    background-color: white;
+    background-color:"#ffab91";
     box-shadow: 0 14px 28px rgba(0, 0 , 0, 0.2);
     margin-bottom: 35px;
     display: flex;
@@ -19,3 +19,4 @@ div.h3{
     color: black ;
     font-family: fantasy;
 }
+
