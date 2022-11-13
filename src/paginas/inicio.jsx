@@ -5,18 +5,25 @@ import Ubication from "../components/ubication/Ubication";
 import { MyDinamicStorage } from "../components/myLocalStorage/MyDinamicStorage";
 import "../css/colors.module.css"; 
 
+import  AllProducts  from "../bbdd-productos/allProducts";
+
 
 const Inicio = () => {
     return (
-        <pag>
+        <div className="pag">
             <NavigationBar/>
+            <br/>
+            <div>
+              <AllProducts/>
+            </div>
+            <br/>
             <MyDinamicStorage/>
           <h2>
             <Carrusel/>
           </h2>
-          {/* <div><Ubication/></div> */}
+          <div><Ubication/></div>
         <div/>
-        </pag>
+        </div>
     )
 } 
 
