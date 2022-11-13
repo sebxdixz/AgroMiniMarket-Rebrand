@@ -14,7 +14,7 @@ export const Profile = () => {
     }, []);
 
     return (
-        <div>
+        <div className="Box">
             <h3>¡Hola { nombre }! Tenemos productos para ti.</h3>
         </div>
     )

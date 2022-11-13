@@ -3,10 +3,10 @@ import './Carrusel.css';
 import SlideProducto1 from "./01.jpg"
 import SlideProducto2 from "./02.jpg"
 import SlideProducto3 from "./03.jpg"
-import "../../css/colors.module.css"; 
 
 function Carrusel() {
   return (
+      <box>
     <Carousel fade>
       <Carousel.Item>
         <div className="slidesProductos" id='primary'>
@@ -50,6 +50,7 @@ function Carrusel() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </box>
   );
 }
 

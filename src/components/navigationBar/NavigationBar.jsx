@@ -5,6 +5,7 @@ import logo3 from "../../logos/Logo3AM.png";
 import { Link } from "react-router-dom";
 import './navigationBar.css'
 
+
 // const Logos =require.context('../../logos/');
 
 function NavigationBar() {
@@ -16,7 +17,7 @@ function NavigationBar() {
   }
     return (
       <>
-            <NavContainer style={{ backgroundColor: '#ff6434', borderRadius:0 }}>
+            <NavContainer style={{ backgroundColor: '#f9683a', borderRadius:0 }}>
         <h2>
           <a href="/">
             <div className="inicio">

@@ -9,16 +9,18 @@ import "../css/colors.module.css";
 
 const Inicio = () => {
     return (
-        <div className="pag">
+        <pag>
+          <cont>
             <NavigationBar/>
             
             <MyDinamicStorage/>
-          <h2>
-            <Carrusel/>
-          </h2>
+            <Carrusel style={{max:"50%"}} />
+          </cont>
           <div><Ubication/></div>
         <div/>
-        </div>
+        </pag>
+
+    
     )
 } 
 

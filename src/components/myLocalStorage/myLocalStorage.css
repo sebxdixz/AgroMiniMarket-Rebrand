@@ -8,9 +8,9 @@ h4{
     font-size: 0%;
 }
 h3{
-    background-color: #ffab91;
+    background-color: #f9683a;
     color: #000000 ;
     font-family: Helvetica;
     font-style: italic;
-    background-size: 30px;
+    width: auto;
 }
