@@ -6,7 +6,7 @@ import SlideProducto3 from "./03.jpg"
 
 function Carrusel() {
   return (
-      <box>
+      <div className='Box'>
     <Carousel fade>
       <Carousel.Item>
         <div className="slidesProductos" id='primary'>
@@ -50,7 +50,7 @@ function Carrusel() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-    </box>
+    </div>
   );
 }
 

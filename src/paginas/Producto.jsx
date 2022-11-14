@@ -8,9 +8,9 @@ const Producto = () => {
     return (
         <div>
             <NavigationBar />
-            <box>Productos Disponibles</box>
+            <div>Productos Disponibles</div>
             <Googlesheet/>
-            <ProductData/>
+            {/* <ProductData/> */}
         </div>
     );
 } 

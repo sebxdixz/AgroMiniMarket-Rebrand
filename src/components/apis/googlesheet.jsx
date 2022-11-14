@@ -1,40 +1,41 @@
 
 import React from 'react'
 
+
 const googlesheet = () => {
   //variables:
   const url ='https://script.google.com/macros/s/AKfycbzcUJ-N1OOKWwO9VUtaziczsouxdy9DYfVCQxxUMHq1qVhSRcOfxwtCyxnMBfzYU8Zzkw/exec';
-  const respuesta = document.querySelector("#respuesta")
 
   //evento:
   document.addEventListener("DOMContentLoaded", llamarApi());
   //funciones:
   async function llamarApi(){
     const respuesta = await fetch( url )
-    const data = await respuesta.json()
-    console.log(typeof data)
-    console.log(data)
-    mostrarHtml(data)
+    const data =  await respuesta.json()
+    const dato=JSON.stringify(data["data"])
+    mostrarHtml(JSON.parse(dato))
   }
   function mostrarHtml(datos){
-    //Aqui
-    // El problema esta acá, No recorre datos de la manera que debería, datos lo imprimo por console log en llamar api 
-    // para que puedas verlo en inspeccionar. Estamos casi casi para finalizar.
-    // Lo otro es que podríamos mostrar pocos productos para que no salgan 2500 pa abajo.
+    const respuestas = document.querySelector("#respuestas")
+    
+    
+    for(let item in datos){
 
-    datos.forEach(item => {
       const row = document.createElement('tr');
-      console.log(item.Familia);
-      row.innerHTML = `
-      <td>${item.Familia}</td>
-      <td>${item.Producto}</td>
-      <td>${item.Precio_Venta}</td>
-      `
-      respuesta.appendChild(row);
-    });
-  }
+      if(datos[item].Precio_Venta===''||datos[item].Precio_Venta==='$ -'){
 
-  // console.log(data)
+      }else{
+      row.innerHTML = (`
+        <td>${datos[item].Familia}</td>
+        <td>${datos[item].Producto}</td>
+        <td>${datos[item].Precio_Venta}</td>
+        <td>${datos[item].Cantidad}</td>
+        `)
+      }
+      respuestas.appendChild(row);
+      
+    }
+  }
   return (
     
     <div className='TablaProductosActualizados'>
@@ -46,18 +47,18 @@ const googlesheet = () => {
                 <th>Tipo</th>
                 <th>Produto</th>
                 <th>Precio</th>
+                <th>Cantidad/Descripcion</th>
               </tr>
             </thead>
-            <tbody id='respuesta'>
+            <tbody id='respuestas' className='cuerpoTabla'>
               <tr>
-                <td>Bebestible</td>
-                <td>Bebida</td>
-                <td>$1.490</td>
+                
               </tr>
             </tbody>
           </table>
         </div>
       </div>
+      {/* <script src="googlesheet.js" defer></script> */}
     </div>
   )
 }
