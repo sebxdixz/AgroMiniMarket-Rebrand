@@ -71,7 +71,9 @@ a{
   text-decoration: none;
   margin-right: 1rem;
   display:inline;
-  font-family: 'Roboto';
+  font-family: 'Helvetica';
+  font-size: 1.2rem;
+}
   
 }
 .links{

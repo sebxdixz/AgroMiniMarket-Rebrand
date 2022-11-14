@@ -1,25 +1,33 @@
 
 div.FatherUbication{
-    background-color : #79bcff;
+    background-color : #c97b63;
     position: relative;
     width: 95%;
     height: 150%;
     align-items: center;
-    left: 2.5%;
-    box-shadow: 5px;
-
+    box-shadow: 50px 50 50 50; 
     
 }
 h2.tituloUbication{
-    background-color: cadetblue;
+    background-color: #870000;
     font-size: x-large;
-    font-family: 'Courier New', Courier, monospace;
-    color: #00458a;
+    font-family: "Helvetica";
+    color: #ffffff;
     max-width: 100%;
-    
+
+
 }
 span{
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    color: rgb(36, 36, 36);
+    font-style: oblique;
+    color:"white";
+    font-family:"Helvetica";
+}
+iframe {
+    border-radius:0.3%;
+}
+h2.tituloUbication{
+    color:#ffffff;
+    font-family: "Helvetica";
 }

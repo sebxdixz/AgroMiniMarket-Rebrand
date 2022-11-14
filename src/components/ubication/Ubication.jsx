@@ -7,7 +7,7 @@ const Ubication = () => {
 
     <div className='FatherUbication'>
 
-        <h2 className='tituloUbication'>Nos ubicamos en: <span>Las Hualtatas 7523, Vitacura</span></h2>
+        <h2 className='tituloUbication'>Nos ubicamos en: <span  >Las Hualtatas 7523, Vitacura</span></h2>
 
         <iframe className='UbicacionAgro' title='Agrominimarket' 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.2781625601597!2d-70.56062098480231!3d-33.38990
