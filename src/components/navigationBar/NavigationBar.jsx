@@ -4,6 +4,8 @@ import BurgerButton from "./BurgerButton";
 import logo3 from "../../logos/Logo3AM.png";
 import { Link } from "react-router-dom";
 import './navigationBar.css'
+import '../../css/colors.module.css'
+
 
 
 // const Logos =require.context('../../logos/');
@@ -18,8 +20,8 @@ function NavigationBar() {
     return (
       <>
             <NavContainer style={{ backgroundColor: '#f9683a', borderRadius: 0, boxShadow: '0px 0px 10px #bf360c' }}>
-        <h2>
-          <a href="/">
+        <h2 className="inicio">
+          <a className="inicio" href="/">
             <div className="inicio">
               <img to="/" className="iconoNavbar" src={logo3} alt="Logo de inicio de AgroMinimarket" />
             </div>
@@ -31,17 +33,20 @@ function NavigationBar() {
           {/* <a onClick={handleClick} href="#h">Buscar(Buscador)</a>
           <a onClick={handleClick} href="#h"><DropdownProductos/></a>
           <a onClick={handleClick} href="#h">Conocenos(Redireccion)</a> */}
-          <span className="navDer2">
-            <a className="navBusc" href="#h">Buscar</a>
-          </span>
-          <span className="navDer2" title="product">
+          <div className="navDer2">
+            <a className="navBusc" href="/">Inicio</a>
+          </div>
+          <div className="separador"/>
+          <div className="navDer2" title="product">
             <a className="navProd" href="/Productos">Productos</a> {/*<DropdownProductos/>*/}
-          </span>
-          <span className="navDer2">
+          </div>
+          <div className="separador"/>
+
+          <div className="navDer2">
             
             <Link to="/Conocenos" className="navConocenos" href="/Conocenos">Conócenos</Link>
           
-          </span>
+          </div>
         </div>
         <div className='burguer'>
           <BurgerButton clicked={clicked} handleClick={handleClick} />
@@ -74,6 +79,7 @@ a{
   font-family: 'Helvetica';
   font-size: 1.2rem;
 }
+
   
 }
 .links{
