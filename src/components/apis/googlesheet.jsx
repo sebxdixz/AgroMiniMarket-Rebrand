@@ -1,11 +1,12 @@
 
 import React from 'react'
-
+import './apis.css'
 
 const googlesheet = () => {
   //variables:
+  const datosMostrados = 100
   const url ='https://script.google.com/macros/s/AKfycbzcUJ-N1OOKWwO9VUtaziczsouxdy9DYfVCQxxUMHq1qVhSRcOfxwtCyxnMBfzYU8Zzkw/exec';
-
+  let i =0;
   //evento:
   document.addEventListener("DOMContentLoaded", llamarApi());
   //funciones:
@@ -13,6 +14,8 @@ const googlesheet = () => {
     const respuesta = await fetch( url )
     const data =  await respuesta.json()
     const dato=JSON.stringify(data["data"])
+    // setUsuarios(JSON.parse(dato));
+    // setTablaUsuarios(JSON.parse(dato));
     mostrarHtml(JSON.parse(dato))
   }
   function mostrarHtml(datos){
@@ -20,7 +23,8 @@ const googlesheet = () => {
     
     
     for(let item in datos){
-
+      i++;
+      if (i>=datosMostrados+2){}else{
       const row = document.createElement('tr');
       if(datos[item].Precio_Venta===''||datos[item].Precio_Venta==='$ -'){
 
@@ -34,11 +38,14 @@ const googlesheet = () => {
       }
       respuestas.appendChild(row);
       
+      }
     }
   }
   return (
     
     <div className='TablaProductosActualizados'>
+      <h2 className='tituloTabla'>Productos con los que se trabaja</h2>
+      
       <div className="row">
         <div className="col-8 offset-2">
           <table className='table table-bordered'>
@@ -51,9 +58,7 @@ const googlesheet = () => {
               </tr>
             </thead>
             <tbody id='respuestas' className='cuerpoTabla'>
-              <tr>
-                
-              </tr>
+              
             </tbody>
           </table>
         </div>
