@@ -11,6 +11,7 @@ div.FatherUbication{
 h2.tituloUbication{
     background-color: #870000;
     font-size: x-large;
+    position: relative;
     font-family: "Helvetica";
     color: #ffffff;
     max-width: 100%;

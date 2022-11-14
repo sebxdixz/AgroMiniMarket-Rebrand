@@ -1,18 +1,13 @@
-import Card from 'react-bootstrap/Card';
+    import React from 'react';
+    import Card from 'react-bootstrap/Card';
+    import "./card.css"
 
-function CartaChica(texto) {
-  return <Card body>{{texto}}</Card>;
-}
-function CartaFoto(titulo,img,text) {
-    return (
-      <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={{img}} />
-        <Card.Body>
-          <Card.Title>{{titulo}}</Card.Title>
-          <Card.Text>{{text}}</Card.Text>
-        </Card.Body>
-      </Card>
-    );
-  }
-  
-export  {CartaChica, CartaFoto};
+    function CartaChica() {
+        return (
+            <Card>
+            <Card.Body className='A'>Bienvenidos a AgrominiMarket, tu lugar de confianza para comprar</Card.Body>
+            </Card>
+        );
+    }
+
+    export default CartaChica

@@ -1,0 +1,12 @@
+div.card{
+    background-color: #f9683a;
+    width: 95%;
+    text-align: center;
+    bottom: 100px;
+    top: 5px;
+}
+div.card-body{
+    color: #fafafa;
+    font-family: "Helvetica";
+    font-weight: bold;
+}
