@@ -13,27 +13,27 @@ import "./card.css"
                 <CardMedia component="img" image={foto1}/>
                 <CardHeader/>
                 <CardContent>
-                    <typography variant="h5" color="primary">
+                    <div className='typography' variant="h5" color="primary">
                         Bienvenido al lugar donde los sueños se hacen realidad
-                    </typography>
+                    </div>
                 </CardContent>
             </Card>
             <Card>
                 <CardMedia component="img" image={foto2}/>
                 <CardHeader/>
                 <CardContent>
-                    <typography variant="h5" color="primary">
+                    <div className='typography' variant="h5" color="primary">
                         Variedad de frutas y verduras para tu vida sana
-                    </typography>
+                    </div>
                 </CardContent>
             </Card>
             <Card>
                 <CardMedia component="img" image={foto3}/>
                 <CardHeader/>
                 <CardContent>
-                    <typography variant="h5" color="primary">
+                    <div className='typography' variant="h5" color="primary">
                         Bienvenido al lugar donde los sueños se hacen realidad
-                    </typography>
+                    </div>
                 </CardContent>
             </Card>
             </Grid>
