@@ -1,17 +1,17 @@
 div.inicio{
-    /* width: 350 */
     width: 400px; 
     height: 100px;
     overflow: hidden;
     margin: -40px;
     position: relative;
     max-height: 10%;
+    justify-content: center;
     
 }
 span.product{
     
 }
-
+    
 img.iconoNavbar{
     position:absolute;
     left: -30%;
@@ -22,6 +22,8 @@ img.iconoNavbar{
     min-height: 20%;
     min-width: 10%;
     max-width: 90%;
+    align-items: center;
+    justify-content: ;
     
 }
 

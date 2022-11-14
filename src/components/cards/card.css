@@ -5,8 +5,20 @@ div.card{
     bottom: 100px;
     top: 5px;
 }
-div.card-body{
+div.MuiGrid-root{
     color: #fafafa;
     font-family: "Helvetica";
     font-weight: bold;
+    width: 100%;
+
+}
+img.MuiCardMedia-root{
+    width: 500px;
+    height: 250px;
+
+}
+div.MuiPaper-root {
+    position:relative;
+    margin: 15px;
+    width: 31%;
 }

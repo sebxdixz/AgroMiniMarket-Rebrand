@@ -17,7 +17,7 @@ function NavigationBar() {
   }
     return (
       <>
-            <NavContainer style={{ backgroundColor: '#f9683a', borderRadius: 0, boxShadow: '0px 0px 10px #bf360c' }}>
+            <NavContainer style={{ backgroundColor: '#9cbbc1', borderRadius: "0% 0% 2% 2%" , boxShadow: '0px 0px 10px #9cbbc1' }}>
         <h2>
           <a href="/">
             <div className="inicio">
@@ -59,7 +59,7 @@ function NavigationBar() {
   const NavContainer = styled.nav`
 
   padding: .4rem;
-  background-color: #0E84CF;
+  background-color: #9cbbc1;
   display: flex;
   align-items: center;
   justify-content: space-between;
