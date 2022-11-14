@@ -17,7 +17,7 @@ function NavigationBar() {
   }
     return (
       <>
-            <NavContainer style={{ backgroundColor: '#f9683a', borderRadius:0 }}>
+            <NavContainer style={{ backgroundColor: '#f9683a', borderRadius: 0, boxShadow: '0px 0px 10px #bf360c' }}>
         <h2>
           <a href="/">
             <div className="inicio">
@@ -71,7 +71,7 @@ a{
   text-decoration: none;
   margin-right: 1rem;
   display:inline;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto';
   
 }
 .links{

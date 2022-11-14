@@ -5,7 +5,7 @@ import NavigationBar from "../components/navigationBar/NavigationBar";
 const About = () => {
     return (
         <div>
-            <NavigationBar />
+            <NavigationBar/>
             <h1>Hola</h1>
         </div>
     );
