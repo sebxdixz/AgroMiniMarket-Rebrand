@@ -14,7 +14,7 @@ import "./card.css"
                 <CardHeader/>
                 <CardContent>
                     <div className='typography' variant="h5" color="primary">
-                        Bienvenido al lugar donde los sueños se hacen realidad
+                        Mas barato, mas cercano, mas rapido y mucho mas rico!!
                     </div>
                 </CardContent>
             </Card>
@@ -32,7 +32,7 @@ import "./card.css"
                 <CardHeader/>
                 <CardContent>
                     <div className='typography' variant="h5" color="primary">
-                        Bienvenido al lugar donde los sueños se hacen realidad
+                        Bienvenido al lugar donde los antojos se hacen realidad
                     </div>
                 </CardContent>
             </Card>
