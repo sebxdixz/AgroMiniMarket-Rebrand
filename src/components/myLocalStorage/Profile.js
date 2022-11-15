@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './myLocalStorage.css'
+import {Grid, Card, CardContent, CardHeader} from '@mui/material';
 
 export const Profile = () => {
 
@@ -14,8 +15,15 @@ export const Profile = () => {
     }, []);
 
     return (
-        <div className="Box">
-            <h3>¡Hola { nombre }! Tenemos productos para ti.</h3>
-        </div>
+        <Grid container spacing={1}>
+            <Card style={{ width: '93%', position:"static" }}>
+            <CardHeader/>
+            <CardContent>
+                <div className='typography' font-size="50px" color="primary">
+                ¡Hola { nombre }! Tenemos productos para ti.
+                </div>
+            </CardContent>
+        </Card>
+        </Grid>
     )
 }

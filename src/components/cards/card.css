@@ -1,6 +1,5 @@
 div.card{
     background-color: #f9683a;
-    width: 95%;
     text-align: center;
     bottom: 100px;
     top: 5px;
@@ -9,12 +8,12 @@ div.MuiGrid-root{
     color: #fafafa;
     font-family: "Helvetica";
     font-weight: bold;
-    width: 100%;
 
 }
 img.MuiCardMedia-root{
-    width: 500px;
+    width: 423px;
     height: 250px;
+    right: 500px;
 
 }
 div.MuiPaper-root {

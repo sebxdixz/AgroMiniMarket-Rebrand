@@ -4,3 +4,7 @@
     color: black;
     
 }
+div.MuiPaper-root {
+    left: 50px;
+    background-color: #b1bfca;   
+}
