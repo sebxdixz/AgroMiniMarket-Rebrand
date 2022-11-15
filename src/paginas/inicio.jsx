@@ -13,7 +13,7 @@ const Inicio = () => {
             <NavigationBar/>
             <MyDinamicStorage/>
             <Carrusel style={{max:"50%"}} />
-                <But/>
+            <But/>
           </div>
         </div>
 
