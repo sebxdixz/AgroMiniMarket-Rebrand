@@ -7,6 +7,7 @@ const googlesheet = () => {
   const datosMostrados = 100
   const url ='https://script.google.com/macros/s/AKfycbzcUJ-N1OOKWwO9VUtaziczsouxdy9DYfVCQxxUMHq1qVhSRcOfxwtCyxnMBfzYU8Zzkw/exec';
   let i =0;
+  const familia1="Verduras";
   //evento:
   document.addEventListener("DOMContentLoaded", llamarApi());
   //funciones:
@@ -29,22 +30,23 @@ const googlesheet = () => {
       if(datos[item].Precio_Venta===''||datos[item].Precio_Venta==='$ -'){
 
       }else{
+        if(((datos[item].Familia).toLowerCase())==(familia1.toLowerCase())){
       row.innerHTML = (`
         <td>${datos[item].Familia}</td>
         <td>${datos[item].Producto}</td>
         <td>${datos[item].Precio_Venta}</td>
         <td>${datos[item].Cantidad}</td>
         `)
+        respuestas.appendChild(row);
       }
-      respuestas.appendChild(row);
-      
+    }
       }
     }
   }
   return (
     
     <div className='TablaProductosActualizados'>
-      <h2 className='tituloTabla'>Productos con los que se trabaja</h2>
+      <h2 className='tituloTabla'>Productos de {familia1} con los que se trabaja</h2>
       
       <div className="row">
         <div className="col-8 offset-2">

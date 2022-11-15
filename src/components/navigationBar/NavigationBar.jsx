@@ -5,6 +5,7 @@ import logo3 from "../../logos/Logo3AM.png";
 import { Link } from "react-router-dom";
 import './navigationBar.css'
 import '../../css/colors.module.css'
+import Nav2 from "./Nav2.jsx";
 
 
 
@@ -38,7 +39,7 @@ function NavigationBar() {
           </div>
           <div className="separador"/>
           <div className="navDer2" title="product">
-            <a className="navProd" href="/Productos">Productos</a> {/*<DropdownProductos/>*/}
+            <a className="navProd" ><Nav2/></a> {/*<DropdownProductos/>*/}
           </div>
           <div className="separador"/>
 
@@ -53,7 +54,9 @@ function NavigationBar() {
         </div>
         <BgDiv className={`initial ${clicked ? 'active' : ''}`}></BgDiv>
       </NavContainer>
+      
       <div className={`${clicked ? 'active' : ''}`}/>
+      
   </>
     
     );
