@@ -4,14 +4,16 @@ import NavigationBar from "../components/navigationBar/NavigationBar";
 import "./producto.css";
 import Googlesheet from "../components/apis/googlesheet";
 import Bebestibles from "../components/apis/Bebestibles";
+import Footer from "../components/footer/footer";
 
 const Producto = () => {
     return (
         <div>
             <NavigationBar />
-            <Bebestibles/>
-            {/* <Googlesheet/> */}
+            {/* <Bebestibles/> */}
+            <Googlesheet/>
             {/* <ProductData/> */}
+            <Footer />
         </div>
     );
 } 

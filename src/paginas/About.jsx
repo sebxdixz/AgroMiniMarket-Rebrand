@@ -5,7 +5,7 @@ import './About.css'
 import {Card , CardContent, CardMedia, CardHeader } from "@mui/material"
 import foto1 from "../components/cards/05.jpg"
 import foto2 from "../components/cards/10.jpg"
-import Foot from "../components/cards/foot";
+import Footer from "../components/footer/footer";
 
 const About = () => {
     return (
@@ -26,13 +26,14 @@ const About = () => {
                 <CardHeader/>
                 <CardContent>
                     <div className='typography' variant="h5" color="primary">
-                    AgrominiMarket aparece como la solucion para los problemas del hogar sin recurrir a los concurridos supermercados, un espacio seguro, tranquilo y familiar.
+                    AgrominiMarket aparece como la solucion para los problemas del hogar, sin recurrir a los concurridos supermercados, un espacio seguro, tranquilo y familiar.
                     </div>
                 </CardContent>
             </Card>
             </div>
             <Ubication/>
-            <Foot />
+            <Footer/>
+
         </div>
         
     );
