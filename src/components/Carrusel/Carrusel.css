@@ -9,6 +9,7 @@ div.slidesProductos{
     position: relative;
     margin-bottom: 50px;
     display: flex;
+    
 }
 
 div.p{
@@ -22,8 +23,5 @@ div.h3{
 Carousel.Item {
     background-color:rgba(0, 0 , 0, 0.2);
 }
-
-
-
 
 

@@ -8,9 +8,9 @@ import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
-import { display } from '@mui/system';
 
-const options = ['Productos', 'Frutas', 'Verduras','Abarrotes', 'Bebestibles','Insumos'];
+
+const options = ['Productos', 'Frutas', 'Verduras', 'Abarrotes', 'Bebestibles', 'Insumos'];
 
 export default function Nav2() {
   const [open, setOpen] = React.useState(false);
@@ -19,20 +19,20 @@ export default function Nav2() {
 
   const handleClick = () => {
     console.info(`You clicked ${options[selectedIndex]}`);
-    window.location.href =`/${options[selectedIndex]}`
+    window.location.href = `/${options[selectedIndex]}`
   };
 
   const handleMenuItemClick = (event, index) => {
     setSelectedIndex(index);
     setOpen(false);
-    window.location.href =`/${options[selectedIndex]}`
+    window.location.href = `/${options[selectedIndex]}`
 
   };
 
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
-    
-    
+
+
   };
 
   const handleClose = (event) => {
@@ -60,11 +60,11 @@ export default function Nav2() {
       </ButtonGroup>
       <Popper
         sx={{
-          zIndex: 1,
+          zIndex: 10,
         }}
         color="#000000"
         font="Helvetica"
-        
+        style={{ left: "-200%" }}
         open={open}
         anchorEl={anchorRef.current}
         role={undefined}
@@ -76,22 +76,22 @@ export default function Nav2() {
             {...TransitionProps}
             style={{
               transformOrigin:
-                placement === 'bottom' ? 'center top' : 'center bottom',
+                placement === 'bottom' ? 'center top' : 'center bottom'
             }}
           >
-            <Paper style={{right:"-30%", backgroundColor:"#E3F2FD" }}>
+            <Paper style={{ right: "-10%", backgroundColor: "#E3F2FD" }}>
               <ClickAwayListener onClickAway={handleClose} >
-                <MenuList id="split-button-menu" autoFocusItem >
+                <MenuList id="split-button-menu" style={{ width: "420px" }} autoFocusItem >
                   {options.map((option, index) => (
-                    <MenuItem 
+                    <MenuItem
                       key={option}
-                      style={{width:"420px" }}
+                      style={{ width: "420px" }}
                       selected={index === selectedIndex}
-                      
+
                       onClick={(event) => handleMenuItemClick(event, index)}
                     >
-                    
-                    
+
+
                       {option}
                     </MenuItem>
                   ))}

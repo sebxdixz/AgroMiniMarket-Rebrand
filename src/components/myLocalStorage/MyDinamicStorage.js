@@ -1,68 +1,68 @@
-import React, { useState } from 'react';
-import { Profile } from './Profile.js';
-import './myLocalStorage.css'
+import React, { useState } from "react";
+import { Profile } from "./Profile.js";
+import "./myLocalStorage.css";
 
 export const MyDinamicStorage = () => {
-    const [inputText, setInputText] = useState('');
+    const [inputText, setInputText] = useState("");
     const [savedData, setSavedData] = useState(false);
 
-    if (localStorage.getItem('nombre')===null) {
-   
+    if (localStorage.getItem("nombre") === null) {
         const handleInputChange = (e) => {
-            const text = e.target.value
+            const text = e.target.value;
             setInputText(text);
             console.log(inputText);
 
-            if(text === '') {
+            if (text === "") {
                 setSavedData(false);
             }
-        }
+        };
 
         const saveData = () => {
-            localStorage.setItem('nombre', inputText);
+            localStorage.setItem("nombre", inputText);
             setSavedData(true);
-            setTimeout( function() { window.location.href ="/";})
-        }
+            setTimeout(function () {
+                window.location.href = "/";
+            });
+        };
 
-        return(
-            <div id='bigContainer'>
-                <div className='iniciado'>
-                    <div className = 'container'  id='botonCont1'>
-                        <input className = 'input' onChange = { handleInputChange } placeholder = 'Ingresa tu nombre o apodo.'/>
-                        <button className = 'button' onClick = { saveData }>Guardar</button>
+        return (
+            <div id="bigContainer">
+                <div className="iniciado">
+                    <div className="container" id="botonCont1">
+                        <input
+                            className="input"
+                            onChange={handleInputChange}
+                            placeholder="Ingresa tu nombre o apodo."
+                        />
+                        <button className="button" onClick={saveData}>
+                            Guardar
+                        </button>
                     </div>
                 </div>
-            <div className = 'container2' id='botonCont2'>
-                <div className='almacen-local'>
-                    {  <Profile /> }
+                <div className="container2" id="botonCont2">
+                    <div className="almacen-local">{<Profile />}</div>
                 </div>
             </div>
-        </div>
-    
-        )}
-        else{
-
-
+        );
+    } else {
         const handleInputChange = (e) => {
-            const text = e.target.value
+            const text = e.target.value;
             setInputText(text);
             console.log(inputText);
 
-            if(text === '') {
+            if (text === "") {
                 setSavedData(false);
             }
-        }
+        };
 
         const saveData = () => {
-            localStorage.setItem('nombre', inputText);
+            localStorage.setItem("nombre", inputText);
             setSavedData(true);
-        }
-            return(
-                <div className = 'container2' id='botonCont2'>
-                    <div className='almacen-local'>
-                        {  <Profile /> }
-                    </div>
-                </div>
-            );
-        }
+        };
+        return (
+            <div className="container2" id="botonCont2">
+                <div className="almacen-local">{<Profile />}</div>
+            </div>
+        );
     }
+};

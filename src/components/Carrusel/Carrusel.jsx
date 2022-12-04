@@ -9,13 +9,14 @@ function Carrusel() {
     
 
       <div className='Box'>
-    <Carousel fade>
-      <Carousel.Item>
-        <div className="slidesProductos" id='primary'>
+    <Carousel fade >
+      <Carousel.Item >
+        <div className="slidesProductos" id='primary' >
           <img
             className="d-block w-100"
             src={SlideProducto1}
             alt="Imagen de producto de AgroMinimarket 1"
+            
           />
         </div>
         <Carousel.Caption>

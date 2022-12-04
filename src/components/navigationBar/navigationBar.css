@@ -23,12 +23,13 @@ div.separador{
     height: 15px;
 }
 div.navDer2{
-    /* justify-content:center; */
+    font-weight: bold;
+    color: black;
 
     
 
 }
-div.navDer2:hover{
+.navDer2:hover{
     height: 100%;
     background-color:rgba(0,0,0,0.05);
     /* background-image: linear-gradient(#ff5f20, rgba(255, 176, 111, 0.1)); */
@@ -38,9 +39,11 @@ div.navDer2:hover{
     border-bottom: 2px solid black;
     border-radius: 6% 35% 6% 35%;
     transition: all .2s ease;
+    text-shadow: 0px 0px 6px gray;
 }
 a:hover{
-    color: #ffffff;
+   
+
 }
 
 img.iconoNavbar{
@@ -57,8 +60,8 @@ img.iconoNavbar{
     
 }
 
-div.dropd{
-    margin-bottom: -10%;
+.navDer2{
+
 }
 
 .links{
@@ -66,16 +69,20 @@ div.dropd{
 }
 
 div.active{
-    min-height: 185px;
+    /* min-height: 185px; */
     
 }
-div.navDer2{
+.navDer2{
     display: inline-block;
     vertical-align: middle;
     align-items: center;
     padding: 0.3cm;
     font-weight: bold;
     font-family: Helvetica;
+    border-width: 0px;
+    background-color:#9cbbc1;
+    height: 100%;
+
     
 
 }

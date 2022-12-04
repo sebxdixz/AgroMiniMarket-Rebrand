@@ -1,19 +1,18 @@
-h4{
+h4 {
     font-size: small;
 }
-.finalizado{
+.finalizado {
     top: -2000%;
     left: -2000%;
     position: absolute;
     font-size: 0%;
 }
-h3{
-    
+h3 {
     font-family: Helvetica;
     font-style: italic;
     width: auto;
 }
 
-.container2{
+.container2 {
     margin-top: 10px;
 }

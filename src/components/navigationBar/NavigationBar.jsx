@@ -2,25 +2,26 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import BurgerButton from "./BurgerButton";
 import logo3 from "../../logos/Logo3AM.png";
-import { Link } from "react-router-dom";
+
 import './navigationBar.css'
 import '../../css/colors.module.css'
 import Nav2 from "./Nav2.jsx";
 
 
 
+
 // const Logos =require.context('../../logos/');
 
 function NavigationBar() {
-  
+
   const [clicked, setClicked] = useState(false);
   const handleClick = () => {
     //cuando esta true lo pasa a false y vice versa
     setClicked(!clicked);
   }
-    return (
-      <>
-            <NavContainer style={{ backgroundColor: '#9cbbc1', borderRadius: "0% 0% 2% 2%" , boxShadow: '0px 0px 10px #9cbbc1' }}>
+  return (
+    <>
+      <NavContainer style={{ backgroundColor: '#9cbbc1', borderRadius: "0% 0% 2% 2%", boxShadow: '0px 0px 10px #9cbbc1' }}>
         <h2>
           <a href="/">
             <div className="inicio">
@@ -29,42 +30,34 @@ function NavigationBar() {
           </a>
           {/* Agro<span>Minimarket</span> (Inicio Tambien) */}
         </h2>
-        <div className={`links ${clicked ? 'active' : ''}`}>  
-          
+        <div className={`links ${clicked ? 'active' : ''}`}>
+
           {/* <a onClick={handleClick} href="#h">Buscar(Buscador)</a>
           <a onClick={handleClick} href="#h"><DropdownProductos/></a>
           <a onClick={handleClick} href="#h">Conocenos(Redireccion)</a> */}
-          <div className="navDer2">
-            <a className="navBusc" href="/">Inicio</a>
-          </div>
-          <div className="separador"/>
-          <div className="navDer2" title="product">
-            <a className="navProd" ><Nav2/></a> {/*<DropdownProductos/>*/}
-          </div>
-          <div className="separador"/>
+          <button className="navDer2" href="/">Inicio</button>
+          <div className="separador" />
+          <div className="navDer2" title="product"><Nav2 /></div>
+          <div className="separador" />
+          <button className="navDer2" href="/Conocenos">Conócenos</button>
 
-          <div className="navDer2">
-            
-            <Link to="/Conocenos" className="navConocenos" href="/Conocenos">Conócenos</Link>
-          
-          </div>
         </div>
         <div className='burguer'>
           <BurgerButton clicked={clicked} handleClick={handleClick} />
         </div>
         <BgDiv className={`initial ${clicked ? 'active' : ''}`}></BgDiv>
       </NavContainer>
-      
-      <div className={`${clicked ? 'active' : ''}`}/>
-      
-  </>
-    
-    );
-  }
-  
-  export default NavigationBar;
-  
-  const NavContainer = styled.nav`
+
+      <div className={`${clicked ? 'active' : ''}`} />
+
+    </>
+
+  );
+}
+
+export default NavigationBar;
+
+const NavContainer = styled.nav`
 
   padding: .4rem;
   background-color: #9cbbc1;

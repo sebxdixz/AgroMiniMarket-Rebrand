@@ -8,26 +8,26 @@ import { Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
 
 
 const DropdownProductos = () => {
-    const [dropdown, setDropdown]=useState(false);
+    const [dropdown, setDropdown] = useState(false);
 
-    const abrirCerrarDropdown=()=>{
+    const abrirCerrarDropdown = () => {
         setDropdown(!dropdown);
     }
 
-  return (
+    return (
 
-    <div className="DropdownProductos">
-        <Dropdown isOpen={dropdown} toggle={abrirCerrarDropdown}>
-            <DropdownToggle caret>Productos</DropdownToggle>
-            <DropdownMenu className="divProductosDropdown">
-                
-                {/* <ProductData className="catalogoDropdown"/> */}
+        <div className="DropdownProductos">
+            <Dropdown isOpen={dropdown} toggle={abrirCerrarDropdown}>
+                <DropdownToggle caret>Productos</DropdownToggle>
+                <DropdownMenu className="divProductosDropdown">
 
-                <ProductData/>
-            </DropdownMenu>
-        </Dropdown>
-    </div>
-  )
+                    {/* <ProductData className="catalogoDropdown"/> */}
+
+                    <ProductData />
+                </DropdownMenu>
+            </Dropdown>
+        </div>
+    )
 }
 
 export default DropdownProductos

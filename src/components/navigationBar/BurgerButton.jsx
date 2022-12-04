@@ -2,22 +2,22 @@ import React from 'react'
 import styled from 'styled-components';
 
 function BurgerButton(props) {
-    const icons = document.querySelectorAll('.icon');
-    icons.forEach (icon => {  
-      icon.addEventListener('click', (event) => {
-        icon.classList.toggle("open");
-      });
+  const icons = document.querySelectorAll('.icon');
+  icons.forEach(icon => {
+    icon.addEventListener('click', (event) => {
+      icon.classList.toggle("open");
     });
-    
-    
-    
+  });
+
+
+
   return (
     <BurgerContainer>
-        <div  onClick={props.handleClick} className={`icon nav-icon-6 ${props.clicked ? 'open' : ''}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <div onClick={props.handleClick} className={`icon nav-icon-6 ${props.clicked ? 'open' : ''}`}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </BurgerContainer>
   )
 }
