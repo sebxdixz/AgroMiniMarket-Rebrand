@@ -8,7 +8,7 @@ function Footer() {
         <section className="footer">
         <hr className="footer-seperator" />
         <section className="footer-social-media">
-          <a href="https://www.instagram.com/agrominimarket/"><img src={logo} height="30" width="30" /></a>
+          <a href="https://www.instagram.com/agrominimarket/" target="_blank"><img src={logo} height="30" width="30" /></a>
         </section>
         <section className="footer-info">
           <section className="footer-info-left">

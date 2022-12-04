@@ -50,7 +50,7 @@ export default function Nav2() {
       <ButtonGroup variant="" ref={anchorRef} aria-label="split button">
         <Button onClick={handleClick} font="Helvetica">{options[selectedIndex]}</Button>
 
-        <Button
+        <Button style={{left:'-10px'}}
           size="small"
           aria-controls={open ? 'split-button-menu' : undefined}
           aria-expanded={open ? 'true' : undefined}
@@ -82,7 +82,7 @@ export default function Nav2() {
                 placement === 'bottom' ? 'center top' : 'center bottom'
             }}
           >
-            <Paper style={{ right: "-10%", backgroundColor: "#E3F2FD" }}>
+            <Paper style={{ width:'120px', backgroundColor: "#E3F2FD" }}>
               <ClickAwayListener onClickAway={handleClose} >
                 <MenuList id="split-button-menu" style={{ width: "420px" }} autoFocusItem >
                   {options.map((option, index) => (

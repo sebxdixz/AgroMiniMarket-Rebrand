@@ -3,10 +3,10 @@ import './apis.css'
 
 const googlesheet = () => {
   //variables:
-  const datosMostrados = 100;
+  const datosMostrados = 10;
   const url = 'https://script.google.com/macros/s/AKfycbzcUJ-N1OOKWwO9VUtaziczsouxdy9DYfVCQxxUMHq1qVhSRcOfxwtCyxnMBfzYU8Zzkw/exec';
   let i = 0;
-  const familia1 = "Aliños"; //Posibilidades: (Todos, Frutos, Bebestibles, Insumos, Verduras, Abarrotes, Aliños)
+  const familia1 = "Todos"; //Posibilidades: (Todos, Frutos, Bebestibles, Insumos, Verduras, Abarrotes, Aliños)
   //evento:
   document.addEventListener("DOMContentLoaded", llamarApi());
   //funciones:
@@ -23,21 +23,16 @@ const googlesheet = () => {
     const respuestas = document.querySelector("#respuestas")
     for (let item in datos) {
 
-
-      // console.log(datos);
-      // console.log(datos.lenght);
-
-
       const row = document.createElement('tr');
       if (datos[item].Precio_Venta === '' || datos[item].Precio_Venta === '$ -') {
 
       } else {
-        i++;
         if (i >= datosMostrados) { } else {
-          console.log(i);
-
-          console.log(datos[item].Familia);
+          
           if (((datos[item].Familia).toLowerCase()) === (familia1.toLowerCase()) || familia1.toLocaleLowerCase() === "todos") {
+            i++;
+            console.log(i);
+            console.log(datos[item].Familia);
             row.innerHTML = (`
               <td>${datos[item].Familia}</td>
               <td>${datos[item].Producto}</td>
@@ -74,7 +69,7 @@ const googlesheet = () => {
           </table>
         </div>
       </div>
-      <script src="googlesheet.js" defer></script>
+      <script src="googlesheet.js"></script>
     </div>
   )
 }

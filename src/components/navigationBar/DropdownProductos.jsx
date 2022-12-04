@@ -5,6 +5,7 @@ import ProductData from '../catalog/Catalog';
 // Si te sale error te falta correr esto en la terminal: npm i bootstrap reactstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
+import './dropdown.css';
 
 
 const DropdownProductos = () => {
@@ -16,13 +17,10 @@ const DropdownProductos = () => {
 
     return (
 
-        <div className="DropdownProductos">
+        <div className="DropdownProductos" >
             <Dropdown isOpen={dropdown} toggle={abrirCerrarDropdown}>
                 <DropdownToggle caret>Productos</DropdownToggle>
-                <DropdownMenu className="divProductosDropdown">
-
-                    {/* <ProductData className="catalogoDropdown"/> */}
-
+                <DropdownMenu>
                     <ProductData />
                 </DropdownMenu>
             </Dropdown>
