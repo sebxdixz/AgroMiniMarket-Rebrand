@@ -4,6 +4,7 @@ import Carrusel from "../components/carrusel/Carrusel";
 import { MyDinamicStorage } from "../components/myLocalStorage/MyDinamicStorage";
 import "../css/colors.module.css"; 
 import But from "../components/cards/photos"
+import Footer from "../components/footer/footer"
 
 
 const Inicio = () => {
@@ -14,6 +15,23 @@ const Inicio = () => {
             <MyDinamicStorage/>
             <Carrusel style={{max:"50%"}} />
             <But/>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <Footer/>
           </div>
         </div>
 

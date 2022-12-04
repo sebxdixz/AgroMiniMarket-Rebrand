@@ -4,6 +4,7 @@ import NavigationBar from "../components/navigationBar/NavigationBar";
 import "./producto.css";
 // import Googlesheet from "../components/apis/googlesheet";
 import ProductosSheets from "../components/apis/ProductosSheets";
+import Footer from "../components/footer/footer";
 
 const Producto = () => {
 
@@ -14,6 +15,7 @@ const Producto = () => {
             <ProductosSheets />
             {/* <Googlesheet/> */}
             {/* <ProductData/> */}
+            <Footer />
         </div>
     );
 }

@@ -8,6 +8,8 @@ import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
+import { display } from '@mui/system';
+import { Link } from "react-router-dom";
 
 
 const options = ['Productos', 'Frutas', 'Verduras', 'Abarrotes', 'Bebestibles', 'Insumos'];
@@ -104,3 +106,4 @@ export default function Nav2() {
     </React.Fragment>
   );
 }
+

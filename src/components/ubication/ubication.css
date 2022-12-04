@@ -4,7 +4,7 @@ div.FatherUbication {
     width: 95%;
     height: 150%;
     align-items: center;
-    box-shadow: 50px 50px 50px 50px;
+    box-shadow: 5px 5px 3px 3px; 
 }
 
 h2.tituloUbication {
