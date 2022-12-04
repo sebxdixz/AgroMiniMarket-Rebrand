@@ -10,9 +10,9 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import { display } from '@mui/system';
 import { Link } from "react-router-dom";
+import './navigationBar.css'
 
-
-const options = ['Productos', 'Frutas', 'Verduras', 'Abarrotes', 'Bebestibles', 'Insumos'];
+const options = ['Productos', 'Frutas', 'Verduras', 'Abarrotes', 'Bebestibles', 'Insumos', 'Aliños'];
 
 export default function Nav2() {
   const [open, setOpen] = React.useState(false);
@@ -49,6 +49,7 @@ export default function Nav2() {
     <React.Fragment>
       <ButtonGroup variant="" ref={anchorRef} aria-label="split button">
         <Button onClick={handleClick} font="Helvetica">{options[selectedIndex]}</Button>
+
         <Button
           size="small"
           aria-controls={open ? 'split-button-menu' : undefined}

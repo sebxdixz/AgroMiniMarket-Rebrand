@@ -18,6 +18,7 @@ function NavigationBar() {
   const handleClick = () => {
     //cuando esta true lo pasa a false y vice versa
     setClicked(!clicked);
+
   }
   return (
     <>
@@ -35,11 +36,12 @@ function NavigationBar() {
           {/* <a onClick={handleClick} href="#h">Buscar(Buscador)</a>
           <a onClick={handleClick} href="#h"><DropdownProductos/></a>
           <a onClick={handleClick} href="#h">Conocenos(Redireccion)</a> */}
-          <button className="navDer2" href="/">Inicio</button>
+
+          <a className="navDer2" href="/"  >Inicio</a>
           <div className="separador" />
           <div className="navDer2" title="product"><Nav2 /></div>
           <div className="separador" />
-          <button className="navDer2" href="/Conocenos">Conócenos</button>
+          <a className="navDer2" href="/Conocenos"  >Conócenos</a>
 
         </div>
         <div className='burguer'>

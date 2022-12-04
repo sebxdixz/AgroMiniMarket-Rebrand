@@ -13,7 +13,7 @@ function Footer() {
         <section className="footer-info">
           <section className="footer-info-left">
             <section className="footer-info__name">
-                <aaa>Patricio Diaz</aaa> 
+                <a>Patricio Diaz</a> 
                 <br />
                 <br />
                 Ingeniero oriundo del sector 
