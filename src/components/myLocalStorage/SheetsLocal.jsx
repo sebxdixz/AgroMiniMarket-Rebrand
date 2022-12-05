@@ -9,14 +9,19 @@ const sheetsLocal = () => {
 
     const datosMostrados = 100;
     let i = 0;
-    const familia1 = localStorage.getItem("opciones")===null ? "Productos" : localStorage.getItem("opciones"); //Posibilidades: (Productos, Frutos, Bebestibles, Insumos, Verduras, Abarrotes, Aliños)
+    const familia1 = localStorage.getItem("opciones") === null ? "Productos" : localStorage.getItem("opciones"); //Posibilidades: (Productos, Frutos, Bebestibles, Insumos, Verduras, Abarrotes, Aliños)
 
     //variables:
 
     const url = 'https://script.google.com/macros/s/AKfycbzcUJ-N1OOKWwO9VUtaziczsouxdy9DYfVCQxxUMHq1qVhSRcOfxwtCyxnMBfzYU8Zzkw/exec';
 
     //evento:
-    document.addEventListener("DOMContentLoaded", llamarApi());
+    // if (localStorage.getItem("tablaProductos") === null) {
+        document.addEventListener("DOMContentLoaded", llamarApi());
+    // } else {
+    //     document.addEventListener("DOMContentLoaded", onlyShow());
+
+    // }
     //funciones:
     async function llamarApi() {
 
@@ -27,28 +32,32 @@ const sheetsLocal = () => {
         const dato = JSON.stringify(data["data"]);
         // setUsuarios(JSON.parse(dato));
         // setTablaUsuarios(JSON.parse(dato));
-        
+
         // console.log(dato);
 
         saveData(dato)
-        mostrarHtml(JSON.parse(localStorage.getItem("tablaProductos"))); //
+        mostrarHtml(); //
     }
-    
+
 
     const saveData = (datos) => {
         if (localStorage.getItem("tablaProductos") === null) {
-          
+
             localStorage.setItem("tablaProductos", datos);
-      
+
         };
 
     } // Cerramos el if, ya tenemos los datos de la tabla en tablaProductos de LocalStorage
-
-    function mostrarHtml(datos) {
+    async function onlyShow() {
+        
+        const mostrar =await mostrarHtml();
+    }
+    function mostrarHtml() {
         // console.log(JSON.stringify(localStorage.getItem("TablaProductos")));
         // console.log(typeof(datos));
-        let respuestas = document.querySelector("#respuesta2");
-        // console.log("Respuestas 2 recien ", respuestas)
+        const datos = JSON.parse(localStorage.getItem("tablaProductos"));
+        // const respuestas = document.querySelector("#respuesta2");
+        // console.log("Respuestas 2 recien ", respuestas);
         for (let item in datos) {
 
             const row = document.createElement('tr');
@@ -56,7 +65,7 @@ const sheetsLocal = () => {
 
             } else {
                 if (i >= datosMostrados) { } else {
-                  
+
                     if (((datos[item].Familia).toLowerCase()) === (familia1.toLowerCase()) || familia1.toLocaleLowerCase() === "productos") {
                         i++;
                         // console.log(i);
@@ -69,7 +78,9 @@ const sheetsLocal = () => {
                         `)
                         // console.log("respuestas", respuestas);
                         // console.log("row", row);
-                        respuestas.appendChild(row);
+                        document.querySelector("#respuestas").appendChild(row);
+                        // respuestas.appendChild(row);
+
                     }
                 }
             }
@@ -94,7 +105,7 @@ const sheetsLocal = () => {
                                 <th>Cantidad/Descripcion</th>
                             </tr>
                         </thead>
-                        <tbody id='respuesta2' />
+                        <tbody id='respuestas' />
 
 
                     </table>

@@ -22,7 +22,7 @@ function NavigationBar() {
   }
   return (
     <>
-      <NavContainer style={{ backgroundColor: '#9cbbc1', borderRadius: "0% 0% 2% 2%", boxShadow: '0px 0px 10px #9cbbc1' }}>
+      <NavContainer style={{ backgroundColor: '#9cbbc1', borderRadius: "0% 0% 2% 2%", boxShadow: '0px 0px 10px #9cbbc1', position: "sticky", top: "0px", zIndex:"15"}}>
         <h2>
           <a href="/">
             <div className="inicio">
