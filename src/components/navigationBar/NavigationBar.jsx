@@ -106,6 +106,10 @@ a{
       color: black;
       display: inline;
     }
+    a:hover{
+      color: white;
+      transition: all 0.5s ease;
+    }
     display: inline;
   }
 }
