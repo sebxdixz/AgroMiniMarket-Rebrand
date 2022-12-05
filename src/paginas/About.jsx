@@ -12,8 +12,8 @@ const About = () => {
         <div>
             <NavigationBar />
             <div className="row">
-                <Card style={{ width: '30%' }}>
-                    <CardMedia component="img" image={foto1} style={{top: "70px"}}/>
+                <Card style={{ width: '30%', height:"20%" }}>
+                    <CardMedia component="img" image={foto1} style={{width: "99%", height:"30%", display: "flex"}}/>
                 <CardHeader/>
                 <CardContent>
                     <div className='typography' variant="h5" color="primary">
@@ -22,7 +22,7 @@ const About = () => {
                 </CardContent>
             </Card>
             <Card style={{ width: '60%' , height:"40%"}}>
-                    <CardMedia component="img" image={foto2} style={{top: "15px" , height: '100%', width: '100%' }}/>
+                    <CardMedia component="img" image={foto2} style={{top: "3%" , height: '60%', width: '100%' }}/>
                 <CardHeader/>
                 <CardContent>
                     <div className='typography' variant="h5" color="primary">
