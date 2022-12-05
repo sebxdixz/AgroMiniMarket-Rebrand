@@ -10,7 +10,6 @@ div.inicio {
     justify-content: center;
 }
 h2.inicio:hover {
-    
     border-radius: 5%;
     transition: all 0.2s ease;
 }
@@ -22,6 +21,7 @@ div.separador {
 div.navDer2 {
     font-weight: bold;
     color: black;
+    margin-left: -15px;
 }
 .navDer2:hover {
     /* height: 100%; */
@@ -34,11 +34,13 @@ div.navDer2 {
     border-bottom: 2px solid black;
     border-radius: 6% 35% 6% 35%;
     transition: all 0.2s ease;
+    
 }
+
 p {
     color: white;
 }
-div.navDer2:hover{
+div.navDer2:hover {
     color: white;
 }
 
@@ -70,9 +72,11 @@ div.active {
     font-weight: bold;
     font-family: Helvetica;
     border-width: 0px;
-    background-color: #9cbbc1;
+    /* background-color: #9cbbc1; */
     height: 100%;
+    
 }
+
 
 body {
     background: #f2f2f2;

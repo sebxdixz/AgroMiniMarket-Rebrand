@@ -22,7 +22,7 @@ function NavigationBar() {
   }
   return (
     <>
-      <NavContainer style={{ backgroundColor: '#9cbbc1', borderRadius: "0% 0% 2% 2%", boxShadow: '0px 0px 10px #9cbbc1', position: "sticky", top: "0px", zIndex:"15"}}>
+      <NavContainer style={{ backgroundColor: '#9cbbc1', borderRadius: "0% 0% 2% 2%", boxShadow: '0px 0px 10px #9cbbc1', position: "sticky", top: "0px", zIndex: "15" }}>
         <h2>
           <a href="/">
             <div className="inicio">
@@ -41,7 +41,7 @@ function NavigationBar() {
           <div className="separador" />
           <div className="navDer2" title="product"><Nav2 /></div>
           <div className="separador" />
-          <a className="navDer2" href="/Conocenos"  >Conócenos</a>
+          <a className="navDer2" href="/Conocenos"   >Conócenos</a>
 
         </div>
         <div className='burguer'>
@@ -118,6 +118,7 @@ a{
   position: absolute;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 80px;
   top: 17%;
   left: 73%;
   right: 0;
@@ -129,7 +130,10 @@ a{
   a{
     font-size: 1rem;
     margin-top: 1rem;
-    color: white;
+    color: black;
+    text-align: left;
+    background-color:#cde3e7;
+    
   }
 }
 .burguer{
@@ -140,7 +144,7 @@ a{
 `
 
 const BgDiv = styled.div`
-background-color: #222;
+
 position: absolute;
 top: -1000px;
 left: -1000px;
@@ -150,12 +154,17 @@ margin:auto;
 z-index: -1;
 transition: all .4s ease ;
 
+
 &.active{
+  background-color:#cde3e7;
   border-radius: 0 0 25% 25%;
-  top: 0;
+  border-bottom: black 1px solid;
+  border-left: black 1px solid;
+  top: 10%;
   left: 65%;
   bottom: 400%;
   width: 100%;
-  height: 100%;
+  height: 200px;
+  margin-top: 66px;
 }
 `
