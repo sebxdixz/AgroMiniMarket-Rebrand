@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import NavigationBar from "../components/navigationBar/NavigationBar";
 // import ProductData from "../components/catalog/Catalog";
 import "./producto.css";
-// import Googlesheet from "../components/apis/googlesheet";
-import ProductosSheets from "../components/apis/ProductosSheets";
+import ProductosSheets from "../components/apis/ProductosSheets"
+// import Googlesheet from "../components/apis/googlesheet"; 
 import Footer from "../components/footer/footer";
 import SheetsLocal from "../components/myLocalStorage/SheetsLocal";
 
@@ -14,7 +14,10 @@ const Producto = () => {
         <div>
             <NavigationBar />
             {/* <ProductosSheets /> */}
-            <SheetsLocal />
+            <Suspense fallback={<div>Loading...</div>}>
+                <SheetsLocal />
+            </Suspense>
+            {/* <ProductosSheets /> */}
             {/* <Googlesheet/> */}
             {/* <ProductData/> */}
             <Footer />
