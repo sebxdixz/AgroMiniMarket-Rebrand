@@ -13,16 +13,10 @@ function Footer() {
         <section className="footer-info">
           <section className="footer-info-left">
             <section className="footer-info__name">
-                <a>Patricio Diaz</a> 
+                <a>Por:</a> 
                 <br />
                 <br />
-                Ingeniero oriundo del sector 
-                        <br />
-                poniente de santiago, educado
-                <br />
-                en Arica, actualmente dueño de 
-                        <br />
-                AgrominiMarket
+                Patricio Diaz
             </section>       
           </section>
           <section className="footer-info-center">
