@@ -2,6 +2,8 @@ import React from 'react'
 import './apis.css'
 
 const googlesheet = () => {
+
+
   //variables:
   const datosMostrados = 10;
   const url = 'https://script.google.com/macros/s/AKfycbzcUJ-N1OOKWwO9VUtaziczsouxdy9DYfVCQxxUMHq1qVhSRcOfxwtCyxnMBfzYU8Zzkw/exec';
@@ -11,16 +13,20 @@ const googlesheet = () => {
   document.addEventListener("DOMContentLoaded", llamarApi());
   //funciones:
   async function llamarApi() {
-    const respuesta = await fetch(url)
-    const data = await respuesta.json()
-    const dato = JSON.stringify(data["data"])
+    const respuesta = await fetch(url);
+    const data = await respuesta.json();
+    const dato = JSON.stringify(data["data"]);
+
+    // console.log("dato :", dato);
+
     // setUsuarios(JSON.parse(dato));
     // setTablaUsuarios(JSON.parse(dato));
 
     mostrarHtml(JSON.parse(dato))
   }
   function mostrarHtml(datos) {
-    const respuestas = document.querySelector("#respuestas")
+    const respuestas = document.querySelector("#respuestas");
+    console.log(respuestas);
     for (let item in datos) {
 
       const row = document.createElement('tr');
@@ -28,7 +34,7 @@ const googlesheet = () => {
 
       } else {
         if (i >= datosMostrados) { } else {
-          
+
           if (((datos[item].Familia).toLowerCase()) === (familia1.toLowerCase()) || familia1.toLocaleLowerCase() === "todos") {
             i++;
             console.log(i);
@@ -38,6 +44,7 @@ const googlesheet = () => {
               <td>${datos[item].Producto}</td>
               <td>${datos[item].Precio_Venta}</td>
               <td>${datos[item].Cantidad}</td>
+              
               `)
             respuestas.appendChild(row);
           }

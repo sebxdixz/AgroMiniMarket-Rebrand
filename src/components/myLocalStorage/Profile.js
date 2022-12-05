@@ -15,7 +15,7 @@ export const Profile = () => {
 
     return (
         <Grid container spacing={1}>
-            <Card style={{ width: "93%", position: "static" }}>
+            <Card style={{ width: "100%", position: "static" }}>
                 <CardHeader />
                 <CardContent>
                     <div className="typography" fontSize="50px" color="primary">

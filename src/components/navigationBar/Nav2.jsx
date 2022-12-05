@@ -17,17 +17,18 @@ const options = ['Productos', 'Frutas', 'Verduras', 'Abarrotes', 'Bebestibles', 
 export default function Nav2() {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
-  const [selectedIndex, setSelectedIndex] = React.useState(0);
+  const [selectedIndex, setSelectedIndex] = React.useState(localStorage.getItem("opciones")===null? 0 : options.indexOf(localStorage.getItem("opciones")));
 
   const handleClick = () => {
     console.info(`You clicked ${options[selectedIndex]}`);
-    window.location.href = `/${options[selectedIndex]}`
+    window.location.href = `/Productos`
   };
 
   const handleMenuItemClick = (event, index) => {
     setSelectedIndex(index);
+    localStorage.setItem("opciones",options[index])
     setOpen(false);
-    window.location.href = `/${options[selectedIndex]}`
+    window.location.href = `/Productos`
 
   };
 

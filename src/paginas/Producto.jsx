@@ -5,6 +5,7 @@ import "./producto.css";
 // import Googlesheet from "../components/apis/googlesheet";
 import ProductosSheets from "../components/apis/ProductosSheets";
 import Footer from "../components/footer/footer";
+import SheetsLocal from "../components/myLocalStorage/SheetsLocal";
 
 const Producto = () => {
 
@@ -12,7 +13,8 @@ const Producto = () => {
     return (
         <div>
             <NavigationBar />
-            <ProductosSheets />
+            {/* <ProductosSheets /> */}
+            <SheetsLocal />
             {/* <Googlesheet/> */}
             {/* <ProductData/> */}
             <Footer />
