@@ -8,8 +8,6 @@ import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
-import { display } from '@mui/system';
-import { Link } from "react-router-dom";
 import './navigationBar.css'
 
 const options = ['Productos', 'Frutas', 'Verduras', 'Abarrotes', 'Bebestibles', 'Insumos', 'Aliños'];
@@ -68,7 +66,7 @@ export default function Nav2() {
         }}
         color="#000000"
         font="Helvetica"
-        style={{ left: "-200%" }}
+        // style={{ left: "-4000%" }}
         open={open}
         anchorEl={anchorRef.current}
         role={undefined}
@@ -89,7 +87,7 @@ export default function Nav2() {
                   {options.map((option, index) => (
                     <MenuItem
                       key={option}
-                      style={{ width: "420px" }}
+                      style={{ width: "120px" }}
                       selected={index === selectedIndex}
 
                       onClick={(event) => handleMenuItemClick(event, index)}

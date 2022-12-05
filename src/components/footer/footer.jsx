@@ -8,12 +8,12 @@ function Footer() {
         <section className="footer">
         <hr className="footer-seperator" />
         <section className="footer-social-media">
-          <a href="https://www.instagram.com/agrominimarket/" target="_blank"><img src={logo} height="30" width="30" /></a>
+          <a href="https://www.instagram.com/agrominimarket/" target="_blank" rel="noreferrer"><img src={logo} height="30" alt="Logo de Instagram" width="30" /></a>
         </section>
         <section className="footer-info">
           <section className="footer-info-left">
             <section className="footer-info__name">
-                <a>Por:</a> 
+                <p style={{color: "#332f2c"}}>Por:</p> 
                 <br />
                 <br />
                 Patricio Diaz

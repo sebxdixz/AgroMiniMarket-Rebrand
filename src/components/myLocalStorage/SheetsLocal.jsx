@@ -19,6 +19,7 @@ const sheetsLocal = () => {
     document.addEventListener("DOMContentLoaded", llamarApi());
     //funciones:
     async function llamarApi() {
+
         const respuesta = await fetch(url);
         // console.log(respuesta);
 
@@ -26,32 +27,19 @@ const sheetsLocal = () => {
         const dato = JSON.stringify(data["data"]);
         // setUsuarios(JSON.parse(dato));
         // setTablaUsuarios(JSON.parse(dato));
-
+        
         // console.log(dato);
 
         saveData(dato)
         mostrarHtml(JSON.parse(localStorage.getItem("tablaProductos"))); //
     }
+    
 
     const saveData = (datos) => {
         if (localStorage.getItem("tablaProductos") === null) {
-            // console.log(datos);
-            // let arreglo= new Array();
-            // for (let item in datos) {
-            //     arreglo["Familia"].push([datos[item].Familia])
-            //     arreglo["Producto"].push([datos[item].Producto])
-            //     arreglo["Precio_Venta"].push([datos[item].Precio_Venta])
-            //     arreglo["Cantidad"].push([datos[item].Cantidad])
-            // }
-            // localStorage.setItem("tablaProductosFamilia", arreglo["Familia"]);
-            // localStorage.setItem("tablaProductosProducto", arreglo["Producto"]);
-            // localStorage.setItem("tablaProductosPrecio_Venta", arreglo["Precio_Venta"]);
-            // localStorage.setItem("tablaProductosCantidad", arreglo["Cantidad"]);
+          
             localStorage.setItem("tablaProductos", datos);
-            // setSavedData(true);
-            // setTimeout(function () {
-            //     window.location.href = "/";} );
-            // console.log(JSON.parse(localStorage.getItem("tablaProductos")));  
+      
         };
 
     } // Cerramos el if, ya tenemos los datos de la tabla en tablaProductos de LocalStorage
